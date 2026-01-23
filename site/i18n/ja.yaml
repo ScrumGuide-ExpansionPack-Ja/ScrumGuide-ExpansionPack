@@ -3,6 +3,9 @@
   # translation: "and"
   translation: "＆"
 
+- id: all_topics
+  translation: "すべて"
+
 - id: read_online_title
   # translation: "Read the {{ .Site.Title }} online"
   translation: "{{ .Site.Title }}をオンラインで読む"
@@ -259,57 +262,65 @@
 #
 # 以下、足りていない翻訳項目を追加している
 #
-- id: translations_button
-  # translation: "View Translations"
-  translation: "翻訳版を閲覧する"
-
-- id: nav_read_guide
-  # translation: "Read Guide"
-  translation: "ガイドを読む"
-
-- id: nav_history
-  # translation: "History"
-  translation: "履歴"
-
-- id: guide_table_of_contents
-  # translation: "Table of Contents"
-  translation: "目次"
-
-- id: guide_no_content_available
-  # translation: "Content not yet available for this language."
-  translation: "この言語のコンテンツはまだ利用できません。"
-
-- id: guide_back_to_home
-  # translation: "← Back to Home"
-  translation: "← ホームに戻る"
-
-- id: guide_content_unavailable_note
-  # translation: "Note:"
-  translation: "注:"
-
-- id: guide_content_unavailable_message
-  # translation: "This page content is currently unavailable in {{ .Language }}. Showing the default guide content below."
-  translation: "このページのコンテンツは現在、{{ .Language }}で利用できません。以下にデフォルトのガイドコンテンツを表示します。"
-
-- id: guide_updated_label
-  # translation: "Updated:"
-  translation: "更新日:"
-
-- id: guide_version_label
-  # translation: "Version:"
-  translation: "バージョン:"
 
 - id: breadcrumb_home
   # translation: "Home"
   translation: "ホーム"
 
+- id: nav_read_guide
+  # translation: "Read Guide"
+  translation: "ガイドを読む"
+
+- id: translations_button
+  # translation: "View Translations"
+  translation: "翻訳版を閲覧する"
+
+- id: nav_history
+  # translation: "History"
+  translation: "履歴"
+
+- id: history_button
+  # translation: "View History"
+  translation: "履歴を閲覧する"
+
+- id: at_a_glance_title
+  # translation: "At a Glance"
+  translation: "一目でわかる特長"
+
+- id: guide_table_of_contents
+  # translation: "Table of Contents"
+  translation: "目次"
+
 - id: current_open_guide_label
   # translation: "Current Open Guide"
   translation: "現在公開中のガイド"
 
-- id: current_version_label
-  # translation: "Current Version"
-  translation: "現在のバージョン"
+- id: active_status_label
+  # translation: "Active"
+  translation: "アクティブ"
+
+- id: guide_updated_label
+  # translation: "Updated:"
+  translation: "更新日:"
+
+- id: available_languages_label
+  # translation: "Available Languages:"
+  translation: "利用可能な言語:"
+
+- id: translators_label
+  translation: "翻訳者"
+
+- id: pdf_downloads_label
+  # translation: "PDF Downloads:"
+  translation: "PDFダウンロード:"
+
+- id: guide_version_label
+  # translation: "Version:"
+  translation: "バージョン:"
+
+- id: living_document_updated_label
+  # translation: "Living Document - Updated"
+  translation: "継続更新ドキュメント - 更新日"
 
 - id: read_guide_button
   # translation: "Read Guide"
@@ -319,132 +330,157 @@
   # translation: "Translations"
   translation: "翻訳版"
 
-- id: at_a_glance_title
-  # translation: "At a Glance"
-  translation: "一目でわかる特長"
-
-- id: history_button
-  # translation: "View History"
-  translation: "履歴を閲覧する"
-
-- id: active_status_label
-  # translation: "Active"
-  translation: "アクティブ"
-
-- id: available_languages_label
-  # translation: "Available Languages:"
-  translation: "利用可能な言語:"
-
-- id: pdf_downloads_label
-  # translation: "PDF Downloads:"
-  translation: "PDFダウンロード:"
-
-- id: living_document_updated_label
-  # translation: "Living Document - Updated"
-  translation: "継続更新ドキュメント - 更新日"
-
-- id: translators_label
-  translation: "翻訳者"
-
-- id: download_table_contributed_by
-  # translation: "Contributed By"
-  translation: "貢献者"
+- id: guide_back_to_home
+  # translation: "← Back to Home"
+  translation: "← ホームに戻る"
 
 # Homepage specific translations
 - id: hero_badge
   translation: "スクラムガイド2020の補足"
 
+- id: hero_subtitle
+  translation: |
+    "Navigate today's complex product environments with practical guidance on <span class='text-primary fw-semibold'>complexity</span>, <span class='text-primary fw-semibold'>product thinking</span>, <span class='text-primary fw-semibold'>systems of work</span>, and <span class='text-primary fw-semibold'>leadership</span>."
+
 - id: created_by
+  # translation: "Created by"
   translation: "作成者"
 
 - id: explore_expansions
+  # translation: "Explore the Expansions"
   translation: "拡張を探索する"
 
 - id: core_section_title
+  # translation: "Scrum Guide Expansion"
   translation: "スクラムガイド拡張"
 
 - id: core_document_badge
+  # translation: "Core Document"
   translation: "コアドキュメント"
 
 - id: extensions_section_title
+  # translation: "Expansions"
   translation: "拡張"
 
 - id: documents
+  # translation: "documents"
   translation: "ドキュメント"
 
 - id: community_description
+  # translation: "This expansion pack thrives on community collaboration. Join practitioners worldwide in making Scrum more accessible and practical for everyone."
   translation: "この拡張パックはコミュニティのコラボレーションによって成長します。世界中の実践者と共に、スクラムをすべての人にとってよりアクセスしやすく実用的なものにしましょう。"
 
 - id: expansions
+  # translation: "Expansions"
   translation: "拡張"
 
 - id: expert_authors
-  translation: "専門家著者"
+  # translation: "Expert Authors"
+  translation: "専門的な著者たち"
 
 - id: possibilities
+  # translation: "Possibilities"
   translation: "可能性"
 
 - id: view_on_github
+  # translation: "View on GitHub"
   translation: "GitHubで見る"
 
 - id: hero_title
+  # translation: |
+  # Scrum Guide<br />*Expansion Pack*
   translation: |
-    スクラムガイド
-    *拡張パック*
+    スクラムガイド<br />*拡張パック*
 
 - id: hero_description
+  # translation: |
+    # Navigate today's complex product environments with practical guidance on *complexity*, *product thinking*, *systems of work*, and *leadership*.
   translation: |
     *複雑性*、*プロダクト思考*、*作業システム*、*リーダーシップ*に関する実践的なガイダンスで、今日の複雑なプロダクト環境をナビゲートします。
 
-- id: all_topics
-  translation: "すべて"
-
 # Version-specific translations (English placeholders - needs Japanese translation)
 - id: guide_historical_version_notice_title
+  # translation: "Historical Version Notice:"
   translation: "履歴バージョン通知:"
 
 - id: guide_historical_version_notice_text
+  # translation: "You are viewing version {{ .CurrentVersion }} of this guide."
   translation: "このガイドのバージョン {{ .CurrentVersion }} を表示しています。"
 
 - id: guide_historical_version_notice_link
+  # translation: "View the latest version ({{ .LatestVersion }})"
   translation: "最新バージョン（{{ .LatestVersion }}）を表示"
 
 - id: guide_historical_version_notice_suffix
+  # translation: "for the most up-to-date information."
   translation: "最新の情報を確認してください。"
 
 - id: guide_content_unavailable_note
-  translation: "注意:"
+  # translation: "Note:"
+  translation: "注:"
 
 - id: guide_content_unavailable_message
-  translation: "このページのコンテンツは現在{{ .Language }}では利用できません。以下にデフォルトのガイドコンテンツを表示しています。"
+  #   translation: "This page content is currently unavailable in {{ .Language }}. Showing the default guide content below."
+  translation: "このページのコンテンツは現在、{{ .Language }}で利用できません。以下にデフォルトのガイドコンテンツを表示します。"
 
 # Badge translations for guide lists
 - id: badge_english_only
+  # translation: "English Only"
   translation: "英語のみ"
 
 - id: badge_english_only_title
+  # translation: "This content is only available in English"
   translation: "このコンテンツは英語でのみ利用可能です"
 
 - id: badge_newer_english_version
+  # translation: "Newer English Version Available"
   translation: "新しい英語版が利用可能"
 
 - id: badge_newer_english_version_title
+  # translation: "A newer version is available in English"
   translation: "新しいバージョンが英語で利用可能です"
 
 - id: badge_versions_count
+  # translation: "versions"
   translation: "バージョン"
 
 - id: badge_versions_available
+  # translation: "{{ .Count }} versions available"
   translation: "{{ .Count }} バージョン利用可能"
 
 - id: badge_not_in_production
+  # translation: "Production"
   translation: "本番環境"
 
 - id: badge_not_in_production_title
+  # translation: "Will not be built in production"
   translation: "本番環境ではビルドされません"
 
 - id: badge_not_in_preview
+  # translation: "Preview"
   translation: "プレビュー"
 
 - id: badge_not_in_preview_title
+  # translation: "Will not be built in preview"
   translation: "プレビュー環境ではビルドされません"
+
+
+## en.yamlにないけど必要なもの
+- id: guide_no_content_available
+  # translation: "Content not yet available for this language."
+  translation: "この言語のコンテンツはまだ利用できません。"
+
+- id: current_version_label
+  # translation: "Current Version"
+  translation: "現在のバージョン"
+
+
+
+
+
+
+
+
+
+
+
