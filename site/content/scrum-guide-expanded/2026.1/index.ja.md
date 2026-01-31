@@ -371,3 +371,69 @@ _誰が_、_なぜ_、_何を_、_どのように_、_どこで_、_いつ_ の�
 <!-- Without Adaptation, Transparency and Inspection are meaningless. -->
 
 適応がなければ、透明性と検査は無意味である。
+
+<!-- ## The Scrum Values -->
+
+## スクラムの価値基準 {#the-scrum-values}
+
+<!-- The Scrum Values _—focus_, _openness_, _commitment_, _courage_, and *respect—*help create a Scrum Team environment that supports psychological safety and positive collaboration, which align with principles identified in neuroscience as beneficial for learning and effective teamwork. Consider the context. -->
+
+スクラムの価値基準である、集中（_Focus_）、公開（_Openness_）、確約（_Commitment_）、勇気（_Courage_）、尊敬（_Respect_）は、心理的安全性と積極的なコラボレーションを促進するスクラムチームの環境をつくり、学習と効果的なチームワークに有益であると神経科学で特定された原則と整合している。文脈を考慮すること。
+
+<!-- The Scrum Values foster transparency and trust, ensuring that words and actions align. Together, they create a strong foundation for collaboration, performance, and coherence within a Scrum Team. -->
+
+スクラムの価値基準は透明性と信頼を育み、言葉と行動の一致を確保する。スクラムの価値基準を組み合わせることで、スクラムチーム内でのコラボレーション、パフォーマンス、一貫性のための強固な基盤が築かれる。
+
+<!-- Successful Scrum adoption depends on the Scrum Team and Supporters (and other Stakeholders) leading by example as professionals. The Scrum Values can help improve trust among the Scrum Team and Stakeholders. The Scrum Values also encourage ethics [30], vocabulary, tone, work, behavior, and action that foster trust. They also help reduce or avoid a gap between words and actions. -->
+
+スクラムの適用が成功するか否かは、スクラムチームとサポーター（およびその他のステークホルダー）がプロフェッショナルとして模範を示すことができるかどうかに依る。スクラムの価値基準は、スクラムチームとステークホルダー間の信頼を向上させるのに役立つ。スクラムの価値基準はまた、信頼を育む倫理[30]、語彙、トーン、作業、行動、アクションを促進する。それらはまた、言葉と行動の間のギャップを減らしたり避けたりすることを支援する。
+
+<!-- The Scrum Team and Supporters agree to be _open_ about all the work and the challenges. Humility supports _Openness_. _Openness_ requires trust, and trust requires _Openness_. The Scrum Team and Supporters should request and share constructive feedback. They routinely collaborate and learn through high-bandwidth conversations and qualitative or quantitative feedback. -->
+
+スクラムチームとサポーターは、すべての作業と課題について _公開_ であることに同意する。謙虚さは _公開_ を支える。_公開_ は信頼を必要とし、信頼は _公開_ を必要とする。スクラムチームとサポーターは建設的なフィードバックを要求し、共有すべきである。彼らは日常的に帯域幅の太い会話と定性的または定量的フィードバックを通じてコラボレーションし、学習する。
+
+<!-- High-bandwidth conversations are conversations that foster communication in ways that allow for the richest, fastest, and clearest exchange of information. This typically involves face-to-face discussions-either in person, via video calls, visual management, or whiteboards (physical or digital), where participants can use not just words, but also tone of voice, facial expressions, drawing, or body language to fully understand each other. -->
+
+帯域幅の太い会話とは、最も豊富で、最も速く、最も明確な情報交換を可能にする方法でコミュニケーションを促進する会話である。これは通常、対面での議論 —— 対面、ビデオ通話、視覚的管理、またはホワイトボード（物理的またはデジタル）を通じて —— を含み、参加者は言葉だけでなく、声のトーン、表情、描画、またはボディランゲージを使用して互いを完全に理解することができる。
+
+<!-- As Sprints are short, any failures should be small and quick, and risk is identified and managed through fast and _open_ feedback. Perhaps, the only real failure is the lack of learning. -->
+
+スプリントは短いため、小さく速く失敗すべきだ。リスクは迅速でオープン（_公開_）なフィードバックを通じて特定され、管理される。おそらく、真の失敗は唯一、学習の欠如だけである。
+
+<!-- The Scrum Team and Supporters should have the _Courage_ to do the right thing and face tough challenges. They should be courageous in exploring the unknown, changing direction, requesting and sharing information, and engaging in courteous disagreements, e.g., healthy conflict and constructive dissent. The Scrum Team should ask Supporters and leaders for help if needed. -->
+
+スクラムチームとサポーターは正しいことを行い、困難な課題に直面する _勇気_ を持つべきである。彼らは、未知の領域を探求し、方向転換を恐れず、情報の要求・共有を積極的に行い、真っ当な議論 —— 例えば、健全な対立や建設的な反対意見の表明など —— を交わす勇気を持つべきである。スクラムチームは必要に応じてサポーターとリーダーに助けを求めるべきである。
+
+<!-- The Scrum Team _Commits_ to achieving the Sprint Goal, inspecting and adapting toward the Product Goal, (under-emphasized in SG2020) and supporting each other. Commitment means getting relevant work toward the Sprint Goal to comply with the Definition of Output Done at the latest by the end of the Sprint, preferably much earlier. Commitment also means getting to desired outcomes through value realization. -->
+
+スクラムチームは、スプリントゴールの達成、プロダクトゴールに向けた検査と適応（SG2020では強調されていない）、そしてお互い助け合うことを _確約_ する。確約とは、スプリントゴールに向けた関連作業を、遅くともスプリント終了時までに、できればもっと早く、アウトプット完成の定義に準拠させることである。また確約とは、価値実現を通じて、望ましいアウトカムに近づいていくことでもある。
+
+<!-- Their primary _Focus_ is making the best possible progress toward the Sprint Goal. Their secondary Focus is making the best possible progress toward the Product Goal. The Supporters _Commit_ to providing a psychologically safe space and environment for the Scrum Team to deliver Increments; within their _Focus_, the Scrum Team and Supporters _Commit_ to creating time for continuous learning and Adaptation, and the transfer of learning between Scrum Teams to ensure long-term effectiveness. The Scrum Team and Stakeholders should be intentional about addressing trade-offs, including consideration of short-term wins with long-term consequences. -->
+
+スクラムチームが第一に _集中_ すべきことは、スプリントゴールに向けて可能な限り最善の進捗を遂げることである。スクラムチームが第二に _集中_ すべきことは、プロダクトゴールに向けて可能な限り最善の進捗を遂げることである。スクラムチームがインクリメントを届けるために、サポーターは心理的安全性の高い空間と環境を提供することを _確約_ する。その _集中_ を通じて、スクラムチーム・サポーターは継続的学習・適応およびスクラムチーム間での学習の移転の時間を作ることを _確約_ する。これらは長期的な効果性を確実にするためである。スクラムチームとステークホルダーは、短期的成果と長期的影響を考慮するなどのトレードオフに意図的に取り組むべきである。
+
+<!-- The Scrum Team and Supporters (and other Stakeholders) _Respect_ each other as skilled professionals; they _Respect_ each other's differing expertise and perspectives and are constructive when disagreeing. Respectful behavior supports trust. The Scrum Team and Supporters should critique the idea or the approach to find more effective options, not the person(s). -->
+
+スクラムチームとサポーター（および他のステークホルダー）は、熟練したプロフェッショナルとして互いを _尊敬_ する。お互いの異なる専門知識と視点を _尊敬_ し、意見の相違に対して建設的に対応する。尊敬ある行動は信頼を支える。スクラムチームとサポーターは、より効果的な選択肢を見つけるためにアイデアやアプローチを批評すべきであり、人を批判すべきではない。
+
+<!-- _Respect_ helps protect against the weaponization of the other Scrum Values. Demonstrations of _Respect_ can include (but are not limited to) genuine praise, support for each other, humility, psychological safety, constructive disagreement, and cognitive diversity. -->
+
+_尊敬_ は他のスクラムの価値基準が攻撃的に利用されることを防ぐ役割を果たす。_尊敬_ の実践には、心からの称賛、互いへの支援、謙虚さ、心理的安全性、建設的な意見の相違、認知的多様性などが含まれるがこれらに限定されない。
+
+<!-- Scrum Team members and Stakeholders can look at the Scrum Values through the lens of John Boyd's OODA [99, 100, 102]. OODA was created by U.S. Air Force Colonel John Boyd to help pilots make quick, smart decisions in fast-changing situations by moving through four steps: Observe, Orient, Decide, and Act. It's a simple, continuous, iterative, powerful, if often subconscious way to handle uncertainty—like noticing market changes (Observe), analyzing trends and risks (Orient), choosing Product features to test (Decide), and delivering them (Act). OODA helps individuals stay flexible and respond well to whatever comes their way. Scrum can improve OODA. -->
+
+スクラムチームメンバーとステークホルダーは、John BoydのOODA[99,100,102]の視点を通してスクラムの価値基準を見ることができる。OODAは、4つのステップ：観察（Observe）、状況判断（Orient）、意思決定（Decide）、行動（Act）を踏むことで、パイロットが急速に変化する状況で迅速かつ賢明な判断を行うことを支援するためにアメリカ空軍大佐John Boydによって作成された。OODAは不確実性を扱うためのシンプルで、継続的で、反復的で、強力な方法であり、しばしば無意識に活用される。例えば、市場変化に気づく（観察）、トレンドとリスクを分析する（状況判断）、テストするプロダクトフィーチャーを選択する（意思決定）、それらを提供する（行動）などである。OODAは個人が柔軟性を維持し、どんな状況にも適切に対応するのに役立つ。スクラムはOODAを改善できる。
+
+<!-- Individual Scrum Team members can look at the Scrum Values through the lens of John Boyd's OODA, using Scrum to foster emergent solutions. In a Scrum context, the Scrum Values apply across all of OODA, (SGEP has a different emphasis) and in particular, help as follows: -->
+
+スクラムチームメンバーはJohn BoydのOODAの視点からスクラムの価値基準を理解し、スクラムを活用して創発的なソリューションを育むことができる。スクラムの文脈では、スクラムの価値基準はOODAのすべてに適用され（SGEPでは強調点が異なる）、特に以下のように支援する：
+
+<!-- - Observe—Openness and Respect can foster the gathering of all relevant evidence, and diverse perspectives.
+- Orient—Courage is needed to interpret reality, navigate uncertainty, and agree to adapt or pivot, potentially using a reflective pause to challenge assumptions and provoke new insights.
+- Decide—Deciding what to do requires timely analysis, such as backlog refinement, bringing potential next steps into Focus through parallel safe-to-fail experiments to test hypotheses, like small-scale probes (probes should be small, parallel, and designed so that failure is survivable and informative).
+- Act—With clarity on what needs to be done, why, and by whom, Commitment can drive the team to execute effectively within enabling constraints like Sprint of determinant length, fostering emergent solutions. -->
+
+- 観察：公開と尊敬は、関連するすべてのエビデンスと多様な視点の収集を促進する。
+- 状況判断：現実を解釈し、不確実性を乗り越え、適応または方向転換に合意するには勇気が必要である。仮説を検証し新しい洞察を導き出すために、立ち止まって振り返ることもある。
+- 意思決定：何をするかを決めるには、タイムリーな分析が求められる。バックログリファインメントなどを通じて、仮説を検証するための安全に失敗できる実験を並行して行い、次のステップに集中できるようにする（これらの実験は小さく、並行して実行ができ、失敗しても致命的でなく、かつ有益な情報をもたらすよう設計するべきである）。
+- 行動：何を・なぜ・誰が行うかが明確であれば、確約によりスプリントの長さのような制約条件のもとでチームが効果的に行動し、創発的なソリューションを育むことができる。
