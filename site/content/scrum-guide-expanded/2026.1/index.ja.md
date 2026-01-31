@@ -1047,3 +1047,605 @@ _少なくとも1人のプロダクト開発者は人間であるべきである
 <!-- Being a Scrum Master is a calling where helping others succeed is reward enough. A Scrum Master doesn't seek the spotlight. Like any good leader, they give credit to others and take responsibility when things go wrong. Staying in the role for a longer time helps guide the Scrum Team toward its full potential, but only if the Product Developers collectively develop self-management. Parent-style Scrum Master behavior does not foster a self-managing Scrum Team. Context matters. But as a rule of thumb, a Scrum Master who is neither willing, ready, nor able to be an agent of change should step down as a Scrum Master. -->
 
 スクラムマスターは、他者の成功に貢献することを大きなやりがいとする役割である。スクラムマスターは目立とうとはしない。優れたリーダーと同様に、功績を他者に譲り、物事がうまくいかない時には責任を取る。長期的にスクラムマスターを務めることでスクラムチームの潜在能力を最大限引き出すことができるが、それはプロダクト開発者がチームとして自己管理を身につけた場合に限る。親のようなスクラムマスターの振る舞いは自己管理スクラムチームの成長を妨げる。文脈は重要だが、経験則として、変革の担い手となる意志、準備、能力がないスクラムマスターはその役割から退くべきである。
+
+<!-- ## The Scrum Artifacts in the Expansion Pack -->
+
+## 拡張パックにおけるスクラムの作成物 {#the-scrum-artifacts-in-the-expansion-pack}
+
+<!-- Scrum's artifacts provide Transparency about what the Scrum Team and Stakeholders believe will deliver value. Thus, everyone can have the same basis for Inspection and Adaptation. -->
+
+スクラムの作成物は、スクラムチームとステークホルダーが価値を生み出すと信じている内容について、透明性をもたらす。これにより、誰もが同じ基準で作業内容を検査し、必要に応じて適応できるようになる。
+
+<!-- Each artifact contains a commitment:
+
+- For the Product serving the Stakeholders, it is the Definition of Outcome Done. (SGEP added)
+- For the Increment that is a candidate update for the Product, it is the Definition of Output Done (SGEP renamed).
+- For the Product Backlog, it is the Product Goal.
+- For the Sprint Backlog, it is the Sprint Goal. -->
+
+また、各作成物には「確約（コミットメント）」が含まれている：
+
+- ステークホルダーに提供するプロダクトについては、アウトカム完成の定義（SGEP追加）
+- プロダクトのアップデート候補であるインクリメントについては、アウトプット完成の定義（SGEP改名）
+- プロダクトバックログについては、プロダクトゴール
+- スプリントバックログについては、スプリントゴール
+
+<!-- Upon release of the Increment (output), the Product is what creates value (outcomes). Value is the measurable or observable fulfillment or creation of expectations, needs, or wants from the Stakeholders' perspective. -->
+
+インクリメント（アウトプット）がリリースされることで、プロダクトが価値（アウトカム）を生み出すことになる。ここでいう価値とは、計測可能または観察可能な形で、ステークホルダーの視点から見た、期待やニーズ、要望が満たされたり、新たに生み出されたりすることである。
+
+<!-- These commitments reinforce the pillars of Transparency, Inspection, and Adaptation, enabling empirical process control [27-29]. The Product Goal is fixed for as long as no contrary evidence or observations emerge in the observed Product's Definition of Outcome Done. The Definition of Output Done is not weakened during the Sprint. So what could be changed instead? It could be the Acceptance Criteria for a specific Product Backlog Item, the implementation or fidelity of a specific feature, or even alternative Product Backlog Items for achieving the Sprint Goal, etc. -->
+
+これらのコミットメントは、透明性・検査・適応というスクラムの三本柱を強化し、経験的なプロセス制御を可能にする[27-29]。プロダクトゴールは、プロダクトのアウトカム完成の定義において反対のエビデンスや観察が現れない限り、固定される。アウトプット完成の定義はスプリント中に妥協されることはない。では、代わりに何が見直されたり変更されたりするのかというと、例えば、特定のプロダクトバックログアイテムの受け入れ基準や、特定の機能の実装内容や精度、あるいはスプリントゴール達成のための代替となるプロダクトバックログアイテムなどが挙げられる。
+
+<!-- If the Product Goal shifts often, it could indicate that something is off, perhaps due to a lack of Focus on what matters. Focus is about being professional and deciding what to work on but also what not to work on. -->
+
+もしプロダクトゴールが頻繁に変わるようであれば、それは何かがうまくいっていない兆候を示しており、重要なことに _集中_ できていない可能性がある。_集中_ とは、プロフェッショナルとして何に取り組むかだけでなく、何に取り組まないかを決めることでもある。
+
+<!-- ## Product -->
+
+## プロダクト {#product}
+
+<!-- The Product is an artifact. A Product can be a holistic experience or a platform. It can also be a service, physical, digital, or hybrid, delivering continuous value to Stakeholders (including but not limited to users). -->
+
+プロダクトは作成物の一つである。プロダクトは包括的な体験またはプラットフォームとなることができる。また、サービス、物理的、デジタル、またはハイブリッドであり、ステークホルダー（ユーザーを含むがこれに限定されない）に継続的な価値を提供する。
+
+<!-- An experience is a specific solution designed to meet the needs of Stakeholders, including the user, ideally external to the organization. It provides a direct interaction that delivers value. It is typically focused on solving a particular problem or opportunity, or a set of them for Stakeholders, including but not limited to customers, decision-makers, and users. -->
+
+体験とは、理想的には組織外のユーザーを含むステークホルダーのニーズを満たすように設計された特定のソリューションである。それは価値を提供する直接的な相互作用を提供する。ステークホルダーの特定の課題や機会、またはそれらの組み合わせを解決することに焦点を当てている。対象となるステークホルダーには、顧客、意思決定者、ユーザーなどが含まれるがそれらに限定されない。
+
+<!-- A platform is an architectural device, foundational infrastructure, or set of tools that enables developers to build Products in order to provide an experience. Platforms provide a base for multiple Products to be developed upon, focusing on scalability, reliability, and flexibility for engineers rather than direct user interaction. -->
+
+プラットフォームとは、体験を提供するためのプロダクトを開発者が構築することを可能にするアーキテクチャデバイス、基盤となるインフラストラクチャ、またはツールセットである。プラットフォームは複数のプロダクトを構築するための基盤を提供し、直接的なユーザーとの相互作用よりもエンジニアのためのスケーラビリティ、信頼性、柔軟性に重点を置く。
+
+<!-- The Scrum Team and Stakeholders need to have a clear understanding at all times of what the Product is, who the customers, users, or decision-makers are, and the type of Product it is —like one for end-users, employees, or Scrum Teams—has different Stakeholders and ways it creates value. A Product is evolutionary and often long-lived. The Product needs a single Product Backlog to increase Transparency and maximize value. -->
+
+スクラムチームとステークホルダーはこのプロダクトが何であるか、顧客、ユーザー、または意思決定者が誰であるか、そしてどのようなタイプのプロダクトなのか（エンドユーザー向け、従業員向け、スクラムチーム向けなど）を常に明確な理解を持つ必要がある。プロダクトのタイプにより異なるステークホルダーが存在し、価値創出の方法も異なることを理解する必要がある。プロダクトは進化的であり、しばしば長期にわたり存続する。透明性を高め、価値を最大化するために、プロダクトには単一のプロダクトバックログが必要である。
+
+<!-- Context matters. But as a rule of thumb, for a Product to create and maintain traction, it helps if the Product:
+
+- Sufficiently addresses satisfaction gaps;
+- Is valuable, desirable, viable, usable, feasible, safe, and secure;
+- Has professionalism built-in;
+- Has a compelling, clear, and outcome-metric-oriented Product Vision, Product strategy, and Product Goal, often including intent, rationale, and anti-goals;
+- Adapts and improves to identify, represent, or measure emergence [21]; and,
+- Is extendable and maintainable. -->
+
+文脈は重要である。しかし、経験則として、プロダクトが牽引力を生み出し、それを維持するためには、以下の条件を満たすことが有効である：
+
+- 満足度のギャップに十分に対処している
+- 価値があり、望ましく、実行可能で、使用可能で、実現可能で、安全で、セキュアである
+- プロフェッショナリズムが組み込まれている
+- 明確で説得力があり、成果指標に基づくプロダクトビジョン、プロダクト戦略、プロダクトゴールを備えている。その中には意図、根拠、避けるべきゴールが含まれる事が多い
+- 創発[21]を特定、表現、評価するために適応し改善する
+- 拡張可能であり、保守可能である
+
+<!-- The Product is the manifestation of _why_ we do _what_ we do. -->
+
+プロダクトは、我々が何のために仕事をしているのかを表現したものである。
+
+<!-- ## Commitment: Definition of Outcome Done -->
+
+## コミットメント：アウトカム完成の定義 {#commitment-definition-of-outcome-done}
+
+<!-- The Definition of Outcome Done is a commitment. It describes the observable evidence measures (quantitative or qualitative) required to demonstrate realized benefits, often referred to as value validation. It could be for the overall Product or a specific goal. It's often best to define the measures for value validation before realization starts, as this avoids biases and mistaken interpretations. -->
+
+アウトカム完成の定義はコミットメントの一つである。これは、実現された価値を示すために必要な観察可能なエビデンスの計測基準（定量的または定性的）を記述し、しばしば価値検証と呼ばれる。これはプロダクト全体、または特定のゴールに対して設定される。バイアスや誤った解釈を避けるため、実装を開始する前に価値検証のための計測基準を定義しておくことが最善であることが多い。
+
+<!-- Outcomes confirm user changes; impact confirms organizational results. Together with related interpretations they inform future adaptations, ideally confirming the intended business impact. It could be for a specific goal, such as a larger feature or several features, and be validated through Product telemetry (the Product can measure its own usage). Alternatively, it could be for the overall Product, where it is often about the strategic impact and the validation of the efficacy of the implemented strategic deployment [50-54]. Or a combination of both. -->
+
+アウトカムはユーザーの変化を確認する。インパクトは組織の成果を確認する。関連する解釈とともに、将来の適応のための情報として役立ち、理想的には意図したビジネスへの影響を確認することを目的とする。これは、特定の大きな機能や複数の機能などに向けて設定された特定のゴールを対象とし、プロダクトのテレメトリ（プロダクト自身がその利用状況を計測する）によって検証される。あるいは、プロダクト全体を対象とし、戦略的影響や実施された戦略展開[50-54]の有効性の検証に関するものである。またはこれら両方の組み合わせである。
+
+<!-- Favor direct evidence over circumstantial evidence. For example:
+
+- Customer outcomes could Focus on delivering measurable value to customers, such as increased customer satisfaction, customer long-term cost reduction, or the number of customer jobs addressed.
+- User outcomes could address specific changes in user behavior that solve problems and improve experiences, like completing tasks more efficiently or engaging with new features.
+- Product Stakeholder outcomes could connect these behavioral changes to Product performance metrics, e.g., trends in Product customer, decision-maker/user metrics, Product time to release, time to learn, time to pivot, etc.
+- Business impact, e.g., compliance, business long-term cost reduction, business results, trends in market share, customer satisfaction across all Products, organizational time to release, time to learn, time to pivot, etc.
+- Scrum Team outcomes such as improved technical capability (psychological flow [70], frequency of release, tooling, skills, technical debt, UX or CX debt, capacity), climate/culture for net improvement and innovation. -->
+
+アウトカム完成の定義は状況証拠よりも直接的な証拠（エビデンス）を優先する。例えば以下のようなものである：
+
+- 顧客のアウトカムは顧客満足度の向上、顧客の長期コスト削減、対応した顧客の案件数など、計測可能な顧客価値の提供に _集中_ することができる
+- ユーザーのアウトカムはタスクをより効率的に完了することや新機能の利用など、問題を解決し体験を改善するユーザー行動の具体的な変化に対処することができる
+- プロダクトステークホルダーのアウトカムは、これらの行動変化をプロダクトのパフォーマンス指標に結び付けることができる。例えば、顧客、意思決定者/ユーザー指標のトレンド、プロダクトとしてのリリースまでの時間、学習までの時間、ピボットまでの時間など
+- ビジネスへの影響。例えば、コンプライアンス、長期的なコスト削減、ビジネス成果、市場シェアの傾向、すべてのプロダクトにわたる顧客満足度、組織としてのリリースまでの時間、学習までの時間、ピボットまでの時間など
+- スクラムチームのアウトカム。技術的能力の向上（心理学的フロー状態[46]、リリース頻度、ツール、スキル、技術的負債、UXまたはCX負債、開発能力）、実質的な改善やイノベーションのための風土や文化など
+
+<!-- User eXperience (UX) or Customer eXperience (CX) debt is the sum of design and implementation choices—intentional or not—that make a Product or service less usable, enjoyable, or effective for users or customers. Recognizing, tracking, and addressing this debt is essential for delivering Products that truly meet user needs and expectations. -->
+
+ユーザーエクスペリエンス（UX）負債やカスタマーエクスペリエンス（CX）負債とは、意図的であるか否かに関わらず、プロダクトやサービスをユーザーや顧客にとって使いにくく、楽しめず、効果的でないものとする設計および実装上の選択の総和である。この負債を認識し、追跡し、対処することは、真にユーザーのニーズと期待に応えるプロダクトを提供するために不可欠である。
+
+<!-- Measures over time make Product, market, and Stakeholder trends (including but not limited to customer or user) transparent; these can be reviewed at any time during the Sprint, including the Sprint Review. -->
+
+時間の経過に伴い計測することで、プロダクト、市場、ステークホルダーのトレンド（顧客やユーザーを含むがこれらに限定されない）が透明化される。これらはスプリントレビューを含めスプリントの期間中のいつでも参照可能である。
+
+<!-- ## Increment -->
+
+## インクリメント {#increment}
+
+<!-- The Increment is an artifact. It is the integration of the work completed to the standard of the Definition of Output Done. The Increment is an output and a Product candidate. -->
+
+インクリメントは作成物の一つである。これはアウトプット完成の定義の基準に従って完了した作業を統合したものである。インクリメントはアウトプットでありプロダクトの候補である。
+
+<!-- Multiple Increments may be created within a Sprint through the completion of Product Backlog Items. Each Increment is thoroughly verified, usable, and integrated with all previous Increments. The resulting aggregated Increment is inspected as soon as possible, at the latest at the Sprint Review. The Increment must be usable and useful to enable result feedback. An Increment is central to Scrum as it enables ongoing value validation. -->
+
+プロダクトバックログアイテムの完了により、スプリントでは複数のインクリメントを作成可能である。各インクリメントは徹底的に検証され、利用可能であり、すべての以前のインクリメントと統合されている。結果として得られる集約されたインクリメントは、可能な限り早く、遅くともスプリントレビューで検査される。インクリメントは結果からのフィードバック（結果フィードバック）を可能にするために利用可能かつ有用でなければならない。インクリメントは継続的な価値検証を可能にするため、スクラムの中心的な存在である。
+
+<!-- An Increment-candidate does not qualify as an Increment until it meets the quality standard of the Definition of Output Done. Only an Increment can be released. An Increment should be a concrete stepping stone toward the Product Goal. Increments may be delivered to Stakeholders or released prior to the Sprint Review. _The best value validation is attained through result feedback._ -->
+
+インクリメント候補は、アウトプット完成の定義の品質基準を満たすまでインクリメントとして認められない。リリース可能なのはインクリメントのみである。インクリメントはプロダクトゴールに向けた具体的な踏み⽯となるべきである。スプリントレビューより前にインクリメントをステークホルダーにデリバリーしたり、リリースされたりする可能性がある。_最良の価値検証は結果からのフィードバック（結果フィードバック）を通じて実現される。_
+
+<!-- ## Commitment: Definition of Output Done -->
+
+## コミットメント：アウトプット完成の定義 {#commitment-definition-of-output-done}
+
+<!-- The Definition of Output Done is a commitment. It formally describes the quality measures that express due diligence for the Increment so that it could be delivered to Stakeholders. -->
+
+アウトプット完成の定義はコミットメントの一つである。これはステークホルダーにインクリメントを提供可能とするために適正に評価をしていること（デューデリジェンス）を表す品質基準を正式に記述したものである。
+
+<!-- The Definition of Output Done typically includes (but is not limited to) both technical standards and Product qualities. The Scrum Team creates it if not provided by the organization as a minimum. If there are multiple Scrum Teams on the same Product, they share the same Definition of Output Done as the common foundation but may improve upon it. -->
+
+アウトプット完成の定義は通常、技術的標準とプロダクト品質の両方を含む（ただしこれらに限定されない）。組織から最低限の基準としてアウトプット完成の定義を提供していない場合は、スクラムチームが作成する。プロダクトに関わるスクラムチームが複数ある場合、共通の基盤として同じアウトプット完成の定義を共有するが、それを改善することもできる。
+
+<!-- The Scrum Team is duty-bound to conform to the Definition of Output Done and continuously improve it. The Increment is cumulative. The Definition of Output Done is for the good of the Product and its Stakeholders. The Definition of Output Done is the overall quality standard for the whole Increment, not the specific standard for each item (e.g., Acceptance Criteria). (SGEP more explicit) -->
+
+スクラムチームはアウトプット完成の定義を遵守し、継続的に改善する義務を負う。インクリメントは累積的なものである。アウトプット完成の定義はプロダクトとそのステークホルダーの利益のために存在する。これはインクリメント全体に対する総合的な品質基準であり、個々のアイテムの基準（例：受け入れ基準）ではない（SGEPでより明示的）。
+
+<!-- A released Increment enables result feedback for Definition of Outcome Done value validation. -->
+
+リリースされたインクリメントは、アウトカム完成の定義による価値検証のための結果からのフィードバック（結果フィードバック）を可能にする。
+
+<!-- ## Product Backlog -->
+
+## プロダクトバックログ {#product-backlog}
+
+<!-- The Product Backlog is an artifact. It is the emergent, ordered (sequenced) list of Product Backlog Items needed to attain the Product Goal. The Product Backlog provides Transparency (work clarity) and is the single source of work for the Scrum Team in order to achieve the Product Goal. The Product Owner, always keeping value in mind, guides the ordering of the Product Backlog Items in the Product Backlog. A smaller Product Backlog often provides more Transparency. -->
+
+プロダクトバックログは作成物の一つである。これは創発的かつ順番に並べられた、プロダクトゴールの達成に必要なプロダクトバックログアイテムの一覧である。プロダクトバックログは透明性（作業の明確さ）を提供し、スクラムチームにとってプロダクトゴールを達成するために必要な作業の唯一の情報源である。プロダクトオーナーは常に価値を意識し、プロダクトバックログ内のプロダクトバックログアイテムの順序付けを行う。プロダクトバックログが小さいほど、透明性はより高まる。
+
+<!-- ## Product Backlog Item -->
+
+## プロダクトバックログアイテム {#product-backlog-item}
+
+<!-- A Product Backlog Item is a potentially valuable item in the Product Backlog. It is not necessarily in any specific format. It is intended to deal with a problem or opportunity. It can include Acceptance Criteria that can tell when work is completed, in addition to the Definition of Output Done. One might deliver exactly what was requested but still not deliver sufficient outcomes. So, a Product Backlog Item can also include clearly defined Outcome Criteria that can tell when sufficient value is delivered, in addition to what is already in the Definition of Outcome Done. -->
+
+プロダクトバックログアイテムは、プロダクトバックログ内にある潜在的に価値のあるアイテムである。これは必ずしも特定の形式である必要はない。プロダクトバックログアイテムは問題や機会に対処することを目的としている。アウトプット完成の定義に加えて、作業が完了したことを判断するための受け入れ基準を含むことができる。要求された内容を正確に提供したとしても、十分なアウトカムが得られない場合がある。そのため、アウトカム完成の定義に含まれているものに加えて、十分な価値が提供されたかどうかを示すための明確なアウトカム基準をプロダクトバックログアイテムに含むことができる。
+
+<!-- A Product Backlog Item is a single piece of work that discovers or delivers value. A Product Backlog Item can evolve anytime, even while Product Developers work on it. During refinement, it is broken down into smaller, more understandable (mostly to the Scrum Team) Product Backlog Items that could deliver value. Occasionally, an item in the Product Backlog might not be related to the Product Goal; if this happens often, it's worth examining if the _Focus_ level might not be where it needs to be. The Scrum Team and Stakeholders should _Focus_ on outcomes over outputs, keep the trade-off balance right, and not let the Scrum Team become a 'feature-factory' or 'discovery-factory.' -->
+
+プロダクトバックログアイテムは価値を発見または提供するための単一の作業単位である。プロダクトバックログアイテムは、プロダクト開発者が作業している間であっても、いつでも進化する可能性がある。リファインメントの過程で、価値を提供でき、より小さく、スクラムチームにとってより理解しやすいプロダクトバックログアイテムに分割される。時にはプロダクトバックログ内のアイテムがプロダクトゴールと無関係である場合もある。そのような状況が頻繁に起きるのであれば、_集中_ のレベルが適切に保たれているか検査する価値がある。スクラムチームおよびステークホルダーは、アウトプットよりもアウトカムに _集中_ し、トレードオフのバランスを保ち、スクラムチームが「機能工場」や「発見工場」にならないようにする必要がある。
+
+<!-- ## Acceptance Criteria -->
+
+## 受け入れ基準 {#acceptance-criteria}
+
+<!-- Acceptance Criteria, if they exist, describe when an output for a specific Product Backlog Item is complete, in addition to the Definition of Output Done. Acceptance Criteria in refined items should provide unambiguous clarity on _what_ is requested. Acceptance Criteria include criteria specific to a Product Backlog Item not already addressed in the Definition of Output Done; they can be functional or non-functional. Acceptance Criteria can evolve anytime, even while Product Developers work on them. -->
+
+受け入れ基準が存在する場合、アウトプット完成の定義の記述に加えて、特定のプロダクトバックログアイテムのアウトプットがいつ完了するかを記述する。リファインメントされたアイテムの受け入れ基準は、_何_ が要求されているかについて曖昧さのない明確な基準を示す必要がある。受け入れ基準は、アウトプット完成の定義でまだ扱われていないプロダクトバックログアイテム固有の機能的・非機能的な基準を含む。受け入れ基準は、プロダクト開発者が作業している間であっても、いつでも進化する可能性がある。
+
+<!-- As a subset, outcome criteria, if they exist, describe the intention of the Product Backlog Item; it is the _why_ behind the _what_. The fulfillment of outcome criteria often complements the Definition of Outcome Done for the Product. They can include criteria specific to a Product Backlog Item not already addressed in the Definition of Outcome Done. If questions arise, the outcome criteria provide direction; they can be in the form of a narrative or measures, ideally, the latter. Outcome criteria can evolve anytime, even while Product Developers work on them. -->
+
+アウトカム基準はその一部であり、存在する場合、プロダクトバックログアイテムの意図を記述する。つまり、何（_What_）の背後にあるなぜ（_Why_）を記述するものである。アウトカム基準の達成は、しばしばプロダクトのアウトカム完成の定義を補完する。アウトカム基準は、アウトカム完成の定義でまだ扱われていないプロダクトバックログアイテム固有の基準を含むことがある。疑問が生じた場合、アウトカム基準は方向性を示す。それは、ナラティブ形式または計測可能な指標の形式を取るが、理想的には後者である。アウトカム基準は、プロダクト開発者が作業している間であっても、いつでも進化する可能性がある。
+
+<!-- ## Refinement -->
+
+## リファインメント {#refinement}
+
+<!-- Refinement is an activity. It may be formal (an additional event) (in the SGEP it is a key element) or informal. Refinement is an ongoing emergent process that fosters clarity and reduces risk; it builds enough understanding and confidence that the selected or upcoming Product Backlog Items are ready (can be completed in accordance with the Definition of Output Done within a small number of days, or shorter). Various types of dependencies are considered. -->
+
+リファインメントは活動の一つである。これは正式な場合（追加イベント）（SGEPにおいては重要な要素である）もあれば、非公式な場合もある。リファインメントは明確さを育み、リスクを軽減する継続的な創発プロセスである。これは選択された、または直近で対応予定のプロダクトバックログアイテムが準備完了（アウトプット完成の定義に従って数日以内またはそれより短い時間で完了できる）であるために必要な十分な理解と確信をチームに形成する。様々な種類の依存関係が考慮される。
+
+<!-- Refinement involves breaking down Product Backlog Items into smaller, more understandable (mostly to the Scrum Team) Product Backlog Items. It can add more details such as description, Acceptance Criteria, order, and size. Attributes vary but should be meaningful to the Scrum Team. Refinement can involve research, including but not limited to, problem or opportunity validation, user or customer experience, solution validation. The Product Developers, and nobody else, are responsible for sizing the Product Backlog Items. The Product Owner may influence the Product Developers by helping them understand and select potential trade-offs. -->
+
+リファインメントは、プロダクトバックログアイテムをより小さく、（主にスクラムチームにとって）より理解しやすく分解することを含む。説明、受け入れ基準、並び順、サイズなどの詳細を追加することができる。属性はさまざまあるが、スクラムチームにとって意味のあるものでなければならない。リファインメントには、問題や機会の検証、ユーザーや顧客の体験、ソリューションの検証などの調査活動が含まれるがこれに限定されない。プロダクト開発者のみがプロダクトバックログアイテムのサイズを決定する責任を負う。プロダクトオーナーは、潜在的なトレードオフを理解し、選択できるよう支援することでプロダクト開発者に影響を与えることができる。
+
+<!-- Participants often include Stakeholders and members of the Scrum Team; it is not uncommon for Product Developers to work directly with Stakeholders. Refinement is often supported or facilitated by the Product Owner. The Product Owner can _Focus_ more on Product ownership if the Product Developers have a broad understanding of the Product. Generally speaking, it is a forward-looking activity that offers clarity, direction, and potential _Focus_ for upcoming Sprints. -->
+
+リファインメントの参加者には、多くの場合ステークホルダーやスクラムチームのメンバーが含まれる。プロダクト開発者がステークホルダーと直接作業することも珍しいことではない。リファインメントは、通常プロダクトオーナーにより支援またはファシリテートされる。プロダクト開発者がプロダクトに対する幅広い理解を持っている場合、プロダクトオーナーはプロダクトオーナーシップの発揮により _集中_ できる。一般に、リファインメントは今後のスプリントに向けて明確さ、方向性、潜在的な _集中_ を提供する将来を見据える活動である。
+
+<!-- ## Commitment: Product Goal -->
+
+## コミットメント：プロダクトゴール {#commitment-product-goal}
+
+<!-- The Product Goal is a commitment. It is represented through the Product Backlog, which is owned by the Product Owner. It is the current single, more strategic, ambitious objective (the _why_). It gives direction for the Product and enables _Focus_ for the Product Developers working on the Product. It improves Transparency by providing a clear, valuable direction for the Product Developers to work toward, using a more tactical Sprint Goal (the _why_ for the Sprint). -->
+
+プロダクトゴールはコミットメントの一つである。これはプロダクトオーナーがオーナーであるプロダクトバックログを通じて表現される。プロダクトゴールは現時点における単一かつより戦略的で野心的な目標（なぜ（_Why_））である。プロダクトに方向性を示し、プロダクト開発者がプロダクトに取り組むための _集中_ の源となる。プロダクトゴールはより戦術的な目標であるスプリントゴール（スプリントのなぜ（_Why_））を通じて、プロダクト開発者が向かうべき明確で価値のある方向性を提供し、透明性を高める。
+
+<!-- A Product Goal is the medium-term objective for the Scrum Team and the Stakeholders (and Supporters). The Scrum Team should fulfill (or abandon) one Product Goal before taking on the next. -->
+
+プロダクトゴールはスクラムチームとステークホルダー（およびサポーター）の中期的な目標である。次のプロダクトゴールに移る前に、スクラムチームはひとつのプロダクトゴールを達成（または放棄）しなければならない。
+
+<!-- A Product Goal is usually an as-yet-unproven assertion about value. It can be expressed as one of many things, including a set of hypotheses about closing or lessening satisfaction gaps (outcomes) and their expected business impact. It gets the balance right by focusing on a subset of the multiplicity of Stakeholders' (including but not limited to customers or users) expectations and limits. Through Inspection and Adaptation, it's essential to embrace uncertainty [41], result feedback, side effects, and other learnings. -->
+
+プロダクトゴールは通常、価値に関する未証明の仮説である。満足度ギャップを埋めるもしくは縮小するための仮説（アウトカム）およびそれらがもたらすビジネスへの影響を含む、様々なものひとつとして表現される。それは、多様なステークホルダー（顧客やユーザーを含むがそれに限定されない）の期待や制約の中から、焦点を絞り適切なバランスを取るものである。検査と適応を通じて、不確実性[41]、結果からのフィードバック（結果フィードバック）、副作用、その他の学習を受け入れることが不可欠である。
+
+<!-- ## What about a Product Vision? -->
+
+## プロダクトビジョンについては？ {#what-about-a-product-vision}
+
+<!-- Many organizations work with a Product Vision, which helps visualize a potential future. The Scrum Team can use a Vision as input for considering a Product Goal. A Product Vision is a meaningful, long-term set of valuable desired outcomes. The medium-term Product Goal is often a stepping stone toward a long-term Product Vision. (a thing in SGEP) -->
+
+多くの組織では、未来の可能性を見える化するためにプロダクトビジョンを活用する。スクラムチームは、プロダクトゴールを検討するためのインプットとしてビジョンを用いることができる。プロダクトビジョンは、意味のある長期的な価値のある望ましいアウトカムのまとまりである。中期的なプロダクトゴールは、多くの場合、長期的なプロダクトビジョンに向けた踏み石となる。（SGEPにおける項目）
+
+<!-- As the Scrum Team and Stakeholders inspect and adapt toward the Product Goal, they need to be _open_ to the idea that the Product Vision or Product Goal might also need to adapt. Often, several Product Goals are sequentially achieved while working toward a vision. -->
+
+スクラムチームとステークホルダーがプロダクトゴールに向けての検査と適応を行う際、プロダクトビジョンやプロダクトゴールも適応が必要な場合があるという考えに _公開_ である必要がある。多くの場合、ビジョンに向かって進む中で、複数のプロダクトゴールを一つずつ達成していく。
+
+<!-- The key thing to note is that a Product Vision is often a work of fiction; none of it may be true. Forming hypotheses and running experiments in a direction is essential, and is where Scrum can add the most value. -->
+
+重要な点は、プロダクトビジョンは創作作品であることであり、必ずしも真実とは限らない。仮説を立てて、方向性を持って実験を重ねることが不可欠であり、そこでスクラムが最も価値を発揮する。
+
+<!-- A Product Vision is often inspiring but can be overwhelming. The Product Goal reduces overwhelm by acting as a more tangible vertical slice of a Product Vision or as an enabler for a Product Vision. -->
+
+プロダクトビジョンは多くの場合、刺激的であるが、規模が大きすぎて負担に感じることもある。プロダクトゴールは、プロダクトビジョンのより具体的な垂直スライスや、またはプロダクトビジョン実現のきっかけとなることで、負担感を軽減する。
+
+<!-- ## Sprint Backlog -->
+
+## スプリントバックログ {#sprint-backlog}
+
+<!-- The Sprint Backlog is an artifact. It is composed of the Sprint Goal (the _why_ for the Sprint), the set of Product Backlog Items selected (the _what_, also known as the forecast) for the Sprint, and often has an actionable plan for delivering the Increment (the _how_). It provides Transparency (work clarity) throughout the Sprint. -->
+
+スプリントバックログは作成物の一つである。スプリントゴール（スプリントのなぜ（_Why_））、スプリントのために選んだプロダクトバックログアイテムのセット（何（_What_）をやるのか、つまり予測）、そして、多くの場合、インクリメントを提供するための実行可能な計画（どのように（_How_））で構成される。これにより、スプリント全体を通じた透明性（作業の明確性）が高まる。
+
+<!-- The Sprint Backlog is a plan by and for the Product Developers. It is the Product Developers' viewpoint of the understood work to achieve the Sprint Goal (the why for the Sprint). Suppose a suboptimal scenario where most items in the Sprint Backlog are continually unrelated to the Product Goal. In that case, the _Focus_ and _Commitment_ Scrum Values are not being upheld. -->
+
+スプリントバックログは、プロダクト開発者によるプロダクト開発者のための計画である。これはスプリントゴール（スプリントのなぜ（Why））を達成するために、どんな作業が必要かをプロダクト開発者の視点でまとめている。もしスプリントバックログのほとんどのアイテムがプロダクトゴールと関係ない状況が続いてしまうと、スクラムの _集中_ と _確約_ の価値基準が守られなくなる。
+
+<!-- Within the context of the Sprint Goal, the Product Developers update their plan, even the forecast, throughout the Sprint as more is learned. The Sprint Backlog should have enough work to get started, e.g., start with one or two Product Backlog Items toward the Sprint Goal. (SG2017 idea brought back) The Product Developers inspect their progress toward the Sprint Goal in the Daily Scrum or more often. Product Developers learn to adapt and respond to uncertainty [41]. -->
+
+スプリントゴールの文脈の中においても、プロダクト開発者がより多くのことを学ぶにつれ、スプリント全体を通じた、予測すら含めた計画を更新する。スプリントバックログには、まず始めるのに十分な作業が入っていればよい。例えば、最初は、スプリントゴールに向けた1つまたは2つのプロダクトバックログアイテムで十分だ（SG2017のアイデアを復活）。プロダクト開発者はデイリースクラムにて、またはより頻繁に、スプリントゴールに向けた進捗を検査し、不確実性[41]に適応し対応することを学ぶ。
+
+<!-- ## Commitment: Sprint Goal -->
+
+## コミットメント：スプリントゴール {#commitment-sprint-goal}
+
+<!-- To attain coherence, the Sprint Goal is a commitment created and owned by the Scrum Team (SG2020 Developers owned the commitment). The Sprint Goal is the single unifying objective (coherent with the Product Goal) of the Sprint (the _why_) for the Product Developers, created in Sprint Planning. Delivery of the Sprint Goal is a commitment by the Product Developers. The Sprint Backlog (including the _why_, the _what,_ and, often, the _how_) provides _Focus_ and flexibility regarding the evolving work, thus improving Transparency. -->
+
+一貫性を確保するために、スプリントゴールはスクラムチームによって作成され、所有されるコミットメントの一つである（SG2020では開発者がコミットメントを所有していた）。スプリントゴールはプロダクト開発者にとってのスプリントの唯一のかつ統一された目的（プロダクトゴールと整合している）（なぜ（_Why_））であり、スプリントプランニングで作成される。スプリントゴールの達成はプロダクト開発者による確約である。スプリントバックログ（なぜ（_why_）、なに（_what_）、そして多くの場合どのように（_how_）を含む）は進化する作業に対して _集中_ と柔軟性をもたらし、透明性を向上させる。
+
+<!-- The Sprint Goal encourages the Scrum Team to work together rather than on separate initiatives. If the work turns out to be different from what the Product Developers expected, the Product Developers collaborate with the Product Owner to negotiate possibilities within the Sprint without affecting the Sprint Goal. No one tells the Product Developers how to size or do their work. -->
+
+スプリントゴールはスクラムチームが個別に作業するのではなく、協力して作業することを促進する。もし作業がプロダクト開発者の予想と異なることが判明した場合は、スプリントゴールに影響を与えることがないように、プロダクト開発者はプロダクトオーナーと協力してスプリント内で対応する可能性を調整する。誰もプロダクト開発者に作業の見積りや進め方を指示することはない。
+
+<!-- If there are multiple objectives, as long as they are coherent with the Product Goal it might be ok. Be careful. Consider the trade off of context switching and focus. The Scrum Team should strive to attain balance over time –– balancing current team capabilities and climate, current stakeholder value, potential stakeholder value and time to value. (SGEP considers DevSecOps) -->
+
+複数のゴールがある場合でも、それらがプロダクトゴールと整合性がとれている限りは問題はないかもしれない。ただし、注意が必要だ。コンテキスト切り替えと集中のトレードオフを考慮することである。スクラムチームは、時間をかけてバランスをとるよう努めるべきであり、そのバランスとは現在のチームの能力と風土、現在のステークホルダーへの価値、潜在的なステークホルダーへの価値、そして価値を届けるまでの時間との間で成り立つものである（SGEPではDevSecOpsを考慮している）。
+
+<!-- ## The Scrum Events in the Expansion Pack -->
+
+## 拡張パックにおけるスクラムイベント {#the-scrum-events-in-the-expansion-pack}
+
+<!-- Scrum combines four timeboxed events for Inspection and Adaptation within a containing fifth event of determinate consistent length, the Sprint. These events support the Scrum pillars of Transparency, Inspection, and Adaptation. Releases enable value, ideally, continuously. Infrequent releases lead to delayed result feedback. -->
+
+スクラムでは検査と適応のための4つのタイムボックス化されたイベントを組み合わせている。それらを包含するイベントは「スプリント」と呼ばれ、決められた一貫した長さのスクラムの5つ目のイベントである。これらのイベントはスクラムの三本柱「透明性」「検査」「適応」を支える。リリースは理想的には継続的な価値の創出を可能にする。頻度の少ないリリースは、結果からのフィードバック（結果フィードバック）の遅延を招く。
+
+<!-- A timebox is a stipulated maximum amount of elapsed time from beginning to end for a defined event, not to be confused with an expectation to use that full amount of time. The purpose of a timebox in Scrum is to foster the selection of essential work, creating _Focus_ to achieve desired results quickly. -->
+
+タイムボックスとは、スクラムで定義されているイベントの開始から終了までの経過時間の上限を規定したものである。そのすべての時間を使い切ることを期待したものではない。スクラムにおけるタイムボックスの目的は、そのイベントの本質的な作業に絞ることを促し、望ましい成果を迅速に達成するための _集中_ を生み出すことである。
+
+<!-- Events create cadence and minimize the need for other meetings not part of Scrum. Ideally, each event is held at the same time and place to reduce complexity [12-17] and foster the formation of habits. Skilled facilitation improves effectiveness. Ineffective events risk losing emphasis on the Sprint Goal, Product Goal, Transparency, Inspection, Adaptation, and Scrum Values. -->
+
+イベントはケイデンスを作り出し、スクラムに含まれない他の会議の必要性を最小限に抑える。理想的には、各イベントは同じ時間・場所で開催されることで、複雑性[12-17]を軽減し、習慣の形成を促す。熟練したファシリテーションは効果性を高める。効果性の低いイベントは、スプリントゴール・プロダクトゴール・透明性・検査・適応・スクラムの価値基準に重点を置かなくなるリスクがある。
+
+<!-- Each event has its own purpose and should include deep, meaningful work. Together, the Scrum events provide a scaffold of Transparency to inspect and adapt, pause, and reflect. The Scrum events support structured thinking and working, effectiveness, and a balanced workload. (SGEP is influenced by Cynefin and Evidence-Based Management) -->
+
+スクラムの各イベントにはそれぞれの目的があり、深く意味のある作業を含むべきである。スクラムイベントは、検査と適応、立ち止まり、振り返りのための土台となる透明性を提供する。これらのイベントは、構造化された思考と作業、効果性、そしてバランスの取れた作業負荷を支える（SGEPはクネビンフレームワークとエビデンスベースドマネジメントの影響を受けている）。
+
+<!-- Communication is key to ensuring the Scrum Team and Supporters _Focus_ on the right thing. Apart from the Sprint, events may consume less time as long as coherence is not lost. -->
+
+スクラムチームおよびサポーターが適切な対象に _集中_ するためには、コミュニケーションが鍵となる。スプリント以外のイベントは、一貫性が損なわれない限り、より短い時間で行うことも可能である。
+
+<!-- ## The Sprint -->
+
+## スプリント {#the-sprint}
+
+<!-- The Sprint is an event where ideas are turned into value. The Sprint is the container event. It is an iteration of a determinate time in which work is carried out. It provides _Focus_ and stability. A Sprint is no longer than four weeks. A new Sprint starts immediately after the conclusion of the previous Sprint. All the work necessary to achieve the Product Goal happens within Sprints. -->
+
+スプリントはイベントの一つであり、ここでアイデアが価値に変わる。スプリントは入れ物となるイベントである。作業が実施される定められた期間の反復である。スプリントは _集中_ と安定性をもたらす。スプリントは最大で4週間である。前のスプリントの終了直後に新しいスプリントが始まる。プロダクトゴールを達成するために必要なすべての作業はスプリント内で行われる。
+
+<!-- Sprints are the heartbeat of Scrum, where the Scrum Team turns ideas into usable, useful, and potentially valuable Increments. The Increment is released as soon as practically possible, considering the need for early result feedback. A lack of release to some subset of Stakeholders (including but not limited to real customers, decision-makers, and users) can lead to a lack of timely result feedback. Multiple Increments may be created in a Sprint; the Scrum Team should strive to validate value through early and frequent releases, where applicable. -->
+
+スプリントはスクラムにおける心臓の鼓動であり、スクラムチームがアイデアを利用可能で、有用で、潜在的に価値のあるインクリメントへと変える場である。インクリメントは早期の結果からのフィードバック（結果フィードバック）の必要性を考慮し、可能な限り早くリリースされる。一部のステークホルダー（顧客、意思決定者、ユーザーを含むがこれらに限定されない）へリリースがされていないと、タイムリーに結果からのフィードバック（結果フィードバック）が得られなくなる。スプリントでは複数のインクリメントが作成されることもある。スクラムチームは可能な限り早期かつ頻繁にリリースし価値検証を行うよう努めるべきである。
+
+<!-- During the Sprint:
+
+- No changes are made that would endanger the Sprint Goal;
+- The Increment(s) should not decrease in quality;
+- The Product Backlog is refined as needed; and,
+- As more is learned, current work may be clarified and renegotiated with the Product Owner without affecting the Sprint Goal. -->
+
+スプリントでは、
+
+- スプリントゴールの達成を危険にさらすような変更はしない。
+- インクリメントにより品質を低下させるべきではない。
+- プロダクトバックログを必要に応じてリファインメントする。
+- より多くの知見を得るにつれて、現在の作業は明確化され、スプリントゴールに影響を与えない範囲でプロダクトオーナーと再交渉される可能性がある。
+
+<!-- Sprints enable outcomes by ensuring Inspection and Adaptation of progress toward a Sprint Goal at least every four weeks. When a Sprint is too long, the Sprint Goal may become incoherent, increasing complexity [12-17] and risk. Shorter Sprints often generate more learning cycles; they could also limit risk. -->
+
+スプリントによって、スプリントゴールに対する進捗の検査と適応を少なくとも4週間ごとに確実に行うことで、アウトカムが実現される。スプリントが長すぎると、スプリントゴールが一貫性を失い、複雑性[12-17]とリスクが増加する。スプリントの期間を短くすれば、より多くの学習サイクルを作り出す可能性があり、同時にリスクを軽減できる。
+
+<!-- Shorter Sprints usually require improved capabilities (e.g., refining, vertical slicing, technical domain, business domain). Context matters and the Scrum Team strives to strike the right balance. -->
+
+スプリントを短くするには、リファインメント、垂直スライス、技術ドメインおよびビジネスドメインの知識といった能力の向上が求められる。文脈は重要であり、スクラムチームは適切なバランスを取るよう努める。
+
+<!-- Various complementary practices exist to assess or forecast progress, like burn-downs, burn-ups, flow analytics, Monte Carlo probabilistic forecasts, large effort estimation, fuzzy sets [55], etc. While useful, these do not replace the importance of empiricism [19]. In complex [12-17] environments, what has already happened may be used for forward-looking decision-making, but what will happen is unknown. -->
+
+進捗の評価や予測のための様々な補完的なプラクティスが存在する。例えば、バーンダウン、バーンアップ、フロー分析、モンテカルロ法、大規模工数見積もり、ファジィ集合[55]などである。これらは有用であるが、経験主義[19]の重要性を置き換えるものではない。複雑な[12-17]環境下では、すでに発生したことは将来を見据えた意思決定に使用されるが、これから何が起きるかはわからない。
+
+<!-- You could think about a Sprint as a mini project with a clear outcome, determinate length and understood costs. However, the various work activities happen in parallel and not in a sequential defined linear way. -->
+
+スプリントは、明確な成果、定められた期間、明確なコストを持つミニプロジェクトと考えることもできる。ただし、さまざまな作業は並行して発生し、順序が定められた線形的な方法では実行されない。
+
+<!-- A Sprint could be canceled if the Sprint Goal becomes obsolete. Only the Product Owner has the authority to cancel the Sprint. Shorter Sprints lower the likelihood of a cancellation. -->
+
+スプリントゴールがもはや役に立たなくなった場合、スプリントは中止されることになるだろう。プロダクトオーナーだけがスプリントを中止する権限を持つ。スプリントが短いほど、中止の可能性は低くなる。
+
+<!-- ## Sprint Planning -->
+
+## スプリントプランニング {#sprint-planning}
+
+<!-- Sprint Planning is an event. This first event of the Sprint is where the Scrum Team gives _Focus_ and creates commitment. -->
+
+スプリントプランニングはイベントの一つである。スプリントの最初のイベントであり、スクラムチームが _集中_ を高め、コミットメントを生み出す場である。
+
+<!-- During Sprint Planning, the more strategic Product Goal (the _why_ for the Product Backlog) is considered and provides direction. In doing so, the Product Developers create the Sprint Backlog, which consists of the short-term, more tactical Sprint Goal (the _why_ for the Sprint), the initially identified work, and the plan to deliver. -->
+
+スプリントプランニングにおいて、より戦略的なプロダクトゴール（プロダクトバックログにおけるなぜ（_Why_））が考慮され、方向性が提供される。スプリントプランニングの過程で、プロダクト開発者はスプリントバックログを作成する。スプリントバックログには短期的かつより戦術的なスプリントゴール（スプリントにおけるなぜ（_Why_））、最初に特定された作業、そしてデリバリーのための計画が含まれる。
+
+<!-- Sprint Planning addresses the following topics: -->
+
+スプリントプランニングは次のトピックに対応する：
+
+<!-- ## The _Why_ for the Sprint -->
+
+## スプリントのなぜ（_Why_） {#the-why-for-the-sprint}
+
+<!-- The Product Owner proposes data-informed ideas (e.g., Refinement, result feedback, other learnings) for how the Product could increase its value and utility in the current Sprint. The Product Owner and the Product Developer collaborate to define a Sprint Goal that communicates why the Sprint is valuable to Stakeholders toward the Product Goal (SGEP emphasizes directional, just-in-time planning). The Sprint Goal must be finalized by the end of Sprint Planning. -->
+
+プロダクトオーナーは、プロダクトの価値と有用性を今回のスプリントでどのように高めることができるかについて、データに基づくアイデア（例：リファインメント、結果からのフィードバック、その他の学び）を提案する。プロダクトオーナーとプロダクト開発者が協力して、プロダクトゴールに向けてそのスプリントにはなぜ価値があるかをステークホルダーに伝えるスプリントゴールを定義する（SGEPは方向性のある、ジャストインタイム計画を強調している）。スプリントゴールは、スプリントプランニングの終了までに確定する必要がある。
+
+<!-- ## The _What_ toward the _Why_ -->
+
+## なぜ（_Why_）に向けた何（_What_） {#the-what-toward-the-why}
+
+<!-- Through collaboration with the Product Owner, the Product Developers select items from the Product Backlog to include in the current Sprint. The Scrum Team may refine these items, which increases understanding and confidence. Selected items should be achievable according to the standard of the Definition of Output Done, alongside other items. -->
+
+プロダクト開発者は、プロダクトオーナーとの協働を通して、プロダクトバックログからアイテムを選択し、今回のスプリントに含める。スクラムチームはプロダクトバックログアイテムのリファインメントをする場合がある。それによって、チームの理解と自信が高まる。選択されたプロダクトバックログアイテムは、他のアイテムと同様にアウトプット完成の定義の基準に従って達成可能である必要がある。
+
+<!-- Selecting how much can be completed within a Sprint may be challenging. However, the more the Product Developers know about their past performance, vertical slicing, upcoming capacity, and the Definition of Output Done, the more confident they will be in their ability to forecast Sprint outcomes. -->
+
+スプリント内でどれくらい完了できるかを選択するのは難しいかもしれない。しかしながら、プロダクト開発者が過去の自分たちのパフォーマンス・垂直スライス・今回のキャパシティ・アウトプット完成の定義の理解を深めていけば、スプリントのアウトカムを予測する能力に自信が持てるようになる。
+
+<!-- Successful Scrum Teams do not overload themselves. In fact, they plan to finish work early, sometimes using a buffer for unexpected events [56]. This helps the Scrum Team to stay focused, improve quality, and satisfy Stakeholders by delivering value sooner. Chronic overload or sudden shifts can cause excessive negative stress, which Jeff Sutherland calls 'Bayesian surprise.' They can disrupt the Scrum Team's psychological flow [46] and performance. Clear communication, professional handling of emergence [21], and small, regular changes help prevent this, so Scrum Teams should aim for early delivery. (SGEP supports slack) -->
+
+成功するスクラムチームは過剰な負荷をかけない。実際、成功するスクラムチームは作業を早めに完了できるよう計画し、予期せぬ事態に備えてバッファを設けることもある[56]。これによりスクラムチームは集中を維持し、品質を向上させ、より早く価値をデリバリーすることでステークホルダーを満足させることができる。慢性的な過負荷や突然の変化は、Jeff Sutherlandが「ベイジアン・サプライズ」と呼ぶ過度なストレスを引き起こし、スクラムチームの心理学的フロー[46]やパフォーマンスに悪影響を及ぼす。明確なコミュニケーション、創発へのプロフェッショナルな対応[21]、そして小さな変化を日常的に行うことで、こうした事態を防ぐ事ができる。このような理由から、スクラムチームは早期のデリバリーを目指すべきである（SGEPはスラックを支持している）。
+
+<!-- ## The _How_ for the _What_ -->
+
+## 何（_What_）に対するどのように（_How_） {#the-how-for-the-what}
+
+<!-- How the work is done is at the sole discretion of the Product Developers. No one else tells the Product Developers how to do their work. The Product Developers select their own work; no one else assigns or pushes Product Backlog Items to the Product Developers, not even the Product Owner. -->
+
+作業の進め方はプロダクト開発者の裁量に委ねられている。他の誰もプロダクト開発者に作業の方法を指示することはできない。プロダクト開発者は自ら作業を選択する。プロダクトバックログアイテムをプロダクト開発者に割り当てたり押し付けたりすることは他の誰にもできない。プロダクトオーナーであっても、それは同様である。
+
+<!-- Sprint Planning is timeboxed to a maximum of eight hours for a four-week Sprint. The event is usually shorter for shorter Sprints. Context matters. But as a rule of thumb, do enough planning to get started with the work, e.g., plan a few Product Backlog Items toward the Sprint Goal. -->
+
+スプリントが4週間の場合、スプリントプランニングのタイムボックスは最大で8時間である。スプリントの期間が短ければスプリントプランニングの時間も短くすることが多い。文脈は重要である。しかし、経験則として、作業を開始できるだけの計画、例えばスプリントゴールに向けていくつかのプロダクトバックログアイテムを計画するだけでもよい。
+
+<!-- ## Daily Scrum -->
+
+## デイリースクラム {#daily-scrum}
+
+<!-- The Daily Scrum is an event. At the Daily Scrum, the Product Developers collaborate on progress toward the Sprint Goal and update the actionable plan, the Sprint Backlog, until the next Daily Scrum. In the event the Sprint Goal has already been achieved, the Product Developers collaborate on meaningful progress toward the Product Goal. (SGEP emphasizes direction) -->
+
+デイリースクラムはイベントの一つである。デイリースクラムにおいて、プロダクト開発者はスプリントゴールに向けた進捗について協働し、次のデイリースクラムまで実行可能な計画であるスプリントバックログを更新する。スプリントゴールがすでに達成されている場合、プロダクト開発者はプロダクトゴールに向けた意味のある進捗について協働する（SGEPは方向性を強調している）。
+
+<!-- The Daily Scrum provides _Focus_, cohesion, and urgency and fosters self-management [11]. Usually, only the Product Developers participate. To simplify, it often uses the same meeting cadence, place, and time. -->
+
+デイリースクラムは、_集中_、一体感、緊迫感をもたらし、自己管理を促進する[11]。通常、参加するのはプロダクト開発者のみである。簡素化のため、同じ会議のケイデンス、場所、時間を採用することが多い。
+
+<!-- The Product Developers can select whatever structure and techniques they want. Daily Scrums improve communication towards attaining the Sprint Goal, identify and address risks and impediments, promote quick decision-making, and consequently eliminate the need for other meetings. -->
+
+プロダクト開発者は、任意の構造ややり方を選択できる。デイリースクラムは、スプリントゴールの達成に向けたコミュニケーションを改善し、リスクや障害の特定と対処を行い、迅速な意思決定を促進する。その結果、他の会議を不要にする。
+
+<!-- The Daily Scrum is not the only time the Product Developers adjust their plan for the Sprint within the context of the Sprint Goal or Product Goal. Product Developers often meet throughout the day for more detailed discussions. -->
+
+プロダクト開発者がスプリントゴールやプロダクトゴールの文脈においてスプリントの計画を調整するのは、デイリースクラムのときだけではない。プロダクト開発者は、より詳細な議論をするために、一日を通じて頻繁に話し合う。
+
+<!-- To enable the flow of value [48-49] and enable potential outcomes sooner, the Product Developers should focus on one item or a few items at a time and meet the Definition of Output Done, before starting to work on other items. The Product Developers can achieve this by focusing, having fewer items in progress, and proactively finishing work over starting new work. The Product Developers monitor idle work, not idle people. (SGEP emphasizes flow) -->
+
+価値のフロー[48-49]を促進し、潜在的なアウトカムをより早く実現するために、プロダクト開発者は一度に1つまたは少数のアイテムに集中し、他のアイテムの作業を開始する前にアウトプット完成の定義を満たすべきである。プロダクト開発者は、集中し、進行中のアイテムを少なくし、新しい作業を開始するよりも能動的に作業を完了することで、これを達成することができる。プロダクト開発者が監視するのは、稼働していない人ではなく、停滞している作業である（SGEPはフローを強調している）。
+
+<!-- The Daily Scrum is timeboxed to fifteen minutes per day. -->
+
+デイリースクラムは1日あたり15分間のタイムボックスである。
+
+<!-- ## Sprint Review -->
+
+## スプリントレビュー {#sprint-review}
+
+<!-- The Sprint Review is an event. It is an interactive, collaborative working session. Often, the Scrum Team shares the current Product Goal and presents the Definition of Output Done and the Definition of Outcome Done to the Stakeholders. The Scrum Team shares the results of their work, what trade-offs were made, and how much progress was made toward the Product Goal (the why behind the work). If available, current and up-to-date measures of progress toward the Definition of Outcome Done are shared and considered. -->
+
+スプリントレビューはイベントの一つである。これは相互作用があり協働的なワーキングセッションである。通常、スクラムチームは現在のプロダクトゴールを共有し、アウトプット完成の定義とアウトカム完成の定義をステークホルダーに提示する。スクラムチームは作業の結果、どのようなトレードオフが行われたか、プロダクトゴールに向けてどれだけの進捗が行われたか（作業の背後にあるなぜ）を共有する。可能であれば、アウトカム完成の定義に向けた進捗の現時点かつ最新の指標が共有され検討される。
+
+<!-- The Sprint Review inspects many things related to the Product, such as the Product Goal, Product Backlog, the Sprint Goal, the learnings, the Increment, Stakeholder expectations and limits, result feedback, side effects, progress with the Product, the market, as well as forward-looking, e.g., what new ideas and opportunities have emerged, potential next steps. -->
+
+スプリントレビューは、プロダクトゴール、プロダクトバックログ、スプリントゴール、学び、インクリメント、ステークホルダーの期待と制約、結果からのフィードバック（結果フィードバック）、副次的な影響、プロダクトの進捗状況、市場動向、さらに、将来を見据えた事項——新たに生まれたアイデアや機会、次に取り得る可能性のあるステップなど——について検査する。
+
+<!-- Informed by what is learned:
+
+- Participants sense, listen, learn, and collaborate on what to potentially do next;
+- The Product Backlog (the what) is adapted and possibly the Product Goal, ideally supported by evidence or observations and guided by the Product Goal or optional Product Vision; and,
+- Participants adapt the Product's Definition of Outcome Done for future Sprints. -->
+
+学習したことに基づいて：
+
+- 参加者は次に潜在的に何をすべきかについて感知し、傾聴し、学び、協働する
+- プロダクトバックログ（何）が適応され、場合によってはプロダクトゴールも、理想的にはエビデンスや観察結果に裏打ちされ、プロダクトゴールまたは任意のプロダクトビジョンによって方向づけられる
+- 参加者は将来のスプリントのためにプロダクトのアウトカム完成の定義を適応させる
+
+<!-- It's always important to consider Stakeholders and what they value, including inanimate, non-human Stakeholders such as the law. -->
+
+ステークホルダーと彼らが価値を置くものを考慮することは常に重要である。ステークホルダーには、法律といった、生物でも人間でもないものも含まれる。
+
+<!-- Incomplete Product Backlog Items return to the Product Backlog for future consideration and are not presented; sometimes, they are moved into the next Sprint. -->
+
+未完了のプロダクトバックログアイテムは将来の検討のためにプロダクトバックログに戻され、提示されない。場合によっては、次のスプリントに移されることもある。
+
+<!-- The Sprint Review is the second-to-last event of the Sprint and is timeboxed to four hours for a four-week Sprint. For shorter Sprints, the event is usually shorter. -->
+
+スプリントレビューは、スプリントの最後から2番目のイベントであり、スプリントが4週間の場合、タイムボックスは最大4時間である。スプリントの期間が短ければ、スプリントレビューの時間も短くすることが多い。
+
+<!-- ## Sprint Retrospective -->
+
+## スプリントレトロスペクティブ {#sprint-retrospective}
+
+<!-- The Sprint Retrospective is an event. At this event, the Scrum Team agrees on how to improve. Bad assumptions are also explored, i.e., assumptions that led the Scrum Team in the wrong direction. Good things like particular technologies, processes, patterns, etc., might also be pointed out or reinforced. Inspected elements often vary with the domain of work. Reflection is more effective in a psychologically safe environment. -->
+
+スプリントレトロスペクティブはイベントの一つである。このイベントにおいて、スクラムチームは改善方法について合意する。誤った仮説、すなわちスクラムチームを誤った方向に導く仮説についても検討される。また、有益な事項——特定の技術、プロセス、パターンなど——が指摘されたり、強調されたりすることもある。検査される要素は、作業領域によってしばしば異なる。振り返りは、心理的安全性のある環境においてこそ、より効果的に行われる。
+
+<!-- The Sprint Retrospective focuses on the most helpful changes to improve, such as:
+
+- The Increment
+- Outcomes and business impact
+- Professionalism, e.g., skills, technical practices, tooling, ability to innovate;
+- Flow of validated value [48-49], e.g., end-to-end flow metrics, time-to-market;
+- Effectiveness (the _how_), e.g., technology, processes, dependencies;
+- Interactions and Scrum Team dynamics, e.g., collaboration, working arrangements;
+- Information radiators, e.g., product wall, metrics;
+- The Definition of Output Done for future Sprints;
+- Further adaptations to the Definition of Outcome Done for future Sprints;
+- How to automatically attain the measures regarding the Definition of Outcome Done;
+- And more. -->
+
+スプリントレトロスペクティブは以下のような改善に最も役立つ変更に焦点を当てる：
+
+- インクリメント
+- アウトカムとビジネスへの影響
+- プロフェッショナリズム。例：スキル、技術的実践、ツール活用、イノベーションの能力
+- 検証済み価値のフロー[48-49]。例：エンドツーエンドフロー指標、市場に出すまでの時間
+- 効果性（_どのように_）。例：技術、プロセス、依存関係
+- 相互作用とスクラムチームダイナミクス。例：協働、ワーキングアグリーメント
+- 情報ラジエーター。例：プロダクトウォール、各種指標
+- 将来のスプリントのためのアウトプット完成の定義
+- 将来のスプリントのためのアウトカム完成の定義へのさらなる適応
+- アウトカム完成の定義に関する指標の自動取得方法
+- その他
+
+<!-- The most impactful improvements should be addressed as soon as possible. The Scrum Team should not just talk about improvement; Scrum depends on meaningful, continuous improvement follow-through. Some improvement actions rely on the assistance of Supporters, but that does not mean the Scrum Team should not strive for net improvement regardless (such as continual marginal gains). -->
+
+最も影響の大きな改善は、できるだけ早く対処する。スクラムチームは単なる改善の議論に終始すべきではない。スクラムは意味のある継続的改善の徹底に依存する。いくつかの改善アクションはサポーターの支援に依存するが、それはスクラムチームが改善に向けた純粋な前進、たとえば継続的なわずかな成果の積み重ねを目指すべきでないということを意味するものではない。
+
+<!-- The Sprint Retrospective concludes the Sprint. It is timeboxed to three hours for a four-week Sprint. For shorter Sprints, the event is usually shorter. -->
+
+スプリントレトロスペクティブをもってスプリントは終了する。スプリントが4週間の場合、スプリントレトロスペクティブは最大3時間である。スプリントの期間が短ければ、スプリントレトロスペクティブの時間も短くすることが多い。
+
+<!-- ## End Note -->
+
+## 最後に {#end-note}
+
+<!-- Scrum is like a mirror. If the image in the mirror is not as expected, should the mirror be hidden? -->
+
+スクラムは鏡のようなものである。鏡に映る像が期待通りでない場合、その鏡を隠すべきであろうか？
+
+<!-- Attain at least one Increment each Sprint as a habit before you adapt Scrum. Every part of Scrum has a purpose; understanding the why for each part is essential. Consider the context. The short-term is about delivery. The long-term is about successful emergent change in a direction and the sustainable delivery of value: outcomes for Stakeholders and impact for organizations. Successful Scrum adoption depends on getting the balance right between the short and long terms. -->
+
+スクラムを適用する前に、スプリント毎に少なくとも1つのインクリメントを作成することを習慣化する。スクラムのすべての部分には目的がある。各部分の「なぜ」を理解することが不可欠である。文脈を考慮すること。短期的にはデリバリーが重要である。長期的には望ましい方向への創発的な変化の成功と持続可能な価値の提供——ステークホルダーにとってのアウトカムと組織にとってのインパクト——が重要である。スクラム適用の成功は、短期と長期のバランスを適切に取ることにかかっている。
+
+<!-- Be careful about copying approaches from other organizations without also fostering their culture. Emergent change in the direction of travel is the change. The change includes (but is not limited to) leadership, workflows, processes, and systems, including HR, Finance, Procurement, and more. Scrum is part of a never-ending expedition of continual improvement and evolution in a direction of travel rather than a destination. -->
+
+他の組織からアプローチを模倣する際には、その組織の文化を育むことなしにアプローチを模倣することは慎重にすべきである。望ましい方向への創発的な変化こそが変化である。その変化にはリーダーシップ、ワークフロー、プロセス、人事、財務、調達などのシステムが含まれるが、これらに限定されない。スクラムは目的地ではなく、望ましい方向に向けた継続的改善と進化の終わりなき旅の一部である。
+
+<!-- ## Acknowledgments -->
+
+## 謝辞 {#acknowledgments}
+
+<!-- Scrum was inspired by Lean [20], the Toyota Production System [57-58], the Harvard Business Review article 'The New New Product Development Game' by Hirotaka Takeuchi and Ikujiro Nonaka [18], and Empiricism at Dupont [59]. -->
+
+スクラムは、リーン[20]、トヨタ生産方式[57-58]、竹内弘高と野中郁次郎によるハーバード・ビジネス・レビューの記事「The New New Product Development Game」[18]、デュポン社における経験主義[59]から着想を得ている。
+
+<!-- Scrum was developed in the early 1990s. Ken Schwaber and Jeff Sutherland first co-presented Scrum at the OOPSLA Conference in 1995 [60]. The first version of the [Scrum Guide](https://scrumguides.org/) [7] appeared in 2009. Scrum is evolving. -->
+
+スクラムは1990年代初頭に開発された。Ken SchwaberとJeff Sutherlandは1995年のOOPSLAカンファレンスにて初めてスクラムを共同発表した[60]。[スクラムガイド](https://scrumguides.org/)[7]の初版は2009年に公開された。スクラムは進化を続けている。
+
+<!-- We also thank reviewers who provided feedback to earlier drafts, including but not limited to, Daryn Basson, Alex Benes, Kurt Bittner, Deb Bhattacharya, Magdalena Firlit, Nichervan Fazel, Peter Fischbach, Michael Forni, Tom Gilb, Martin Hinshelwood, Jesse Houwing, Michael Huynh, Matthew Ijogi, Marc Kaufmann, Tom Mellor, Christian Neverdal, Stas Pavlov, Ian Sharp, Alisa Stolze, Mark Summers, and Nader Talai. -->
+
+初期草稿にフィードバックを提供した以下を含むがこれらに限定されない、レビュアーに感謝する。Daryn Basson, Alex Benes, Kurt Bittner, Deb Bhattacharya, Magdalena Firlit, Nichervan Fazel, Peter Fischbach, Michael Forni, Tom Gilb, Martin Hinshelwood, Jesse Houwing, Michael Huynh, Matthew Ijogi, Marc Kaufmann, Tom Mellor, Christian Neverdal, Stas Pavlov, Ian Sharp, Alisa Stolze, Mark Summers, and Nader Talai
+
+<!-- ## Attribution for the Scrum Guide Expansion Pack Collection -->
+
+## スクラムガイド拡張パックコレクションの帰属 {#attribution-for-the-scrum-guide-expansion-pack-collection}
+
+<!-- This collection was written and compiled by _Ralph Jocham, John Coleman, and Jeff Sutherland_. Each section is individually attributed above and retains its original license. The collection as a whole is for informational purposes; please respect the license terms of each section. -->
+
+本コレクションは _Ralph Jocham、John Coleman、Jeff Sutherland_ によって執筆・編集された。各セクションは上記に個別に帰属が記載されており、元のライセンスを保持している。コレクション全体は情報提供を目的としている。各セクションのライセンス条項を尊重されたい。
+
+<!-- ## References -->
+
+## 参考文献 {#references}
+
+\[1\] Langton, C.G. (ed.) (1989) Artificial Life: Proceedings of an Interdisciplinary Workshop on the Synthesis and Simulation of Living Systems, Los Alamos, New Mexico, September 1987\. Santa Fe Institute Studies in the Sciences of Complexity, vol. VI. Redwood City, CA: Addison-Wesley.
+\[2\] Langton, C.G. (1989) 'Life at the edge of chaos', in Langton, C.G. (ed.) Artificial Life: Proceedings of an Interdisciplinary Workshop on the Synthesis and Simulation of Living Systems. Santa Fe Institute Studies in the Sciences of Complexity, vol. VI. Redwood City, CA: Addison-Wesley, pp. 41–91.
+\[3\] Holland, J.H. (1992) Complex Adaptive Systems. Daedalus, 121(1), pp. 17–30. Available at: [https://www.jstor.org/stable/20025416](https://www.jstor.org/stable/20025416) (Accessed: 17 May 2025).
+\[4\] Axelrod, R. and Cohen, M.D. (2000) Harnessing Complexity: Organizational Implications of a Scientific Frontier. New York: Free Press.
+\[5\] Juarrero, A. (1999) Dynamics in Action: Intentional Behavior as a Complex System. Cambridge, MA: MIT Press.
+\[6\] Snowden, D.J. and Boone, M.E. (2007) 'A leader's framework for decision making', Harvard Business Review, 85(11), pp. 68–76. Available at: [https://hbr.org/2007/11/a-leaders-framework-for-decision-making](https://hbr.org/2007/11/a-leaders-framework-for-decision-making) (Accessed: 17 May 2025\)
+\[7\] Schwaber, K. & Sutherland, J. (2020) The Scrum Guide: The definitive guide to Scrum: The rules of the game. Available at: [https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-US.pdf](https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-US.pdf) (Accessed: 17 May 2025\)
+\[8\] Schwaber, K. (2023) 'Scrum Guide', Ken Schwaber's Blog, 25 September. Available at: [https://kenschwaber.wordpress.com/2023/09/25/scrum-guide/](https://kenschwaber.wordpress.com/2023/09/25/scrum-guide/) (Accessed: 20 May 2025).
+\[9\] Mayer, T. (2025) A Simple Guide to Scrum. \[Online\]. Available at: [https://scrum.academy/guide/](https://scrum.academy/guide/) (Accessed: 17 May 2025\)
+\[10\] Scrum.org (2025) Scrum Hexis. Available at: [https://thecynefin.co/product/hexi-scrumorg/?srsltid=AfmBOorcohLYeVy0qBsQFI6mK_bZtJA_uGC6hPL2BdptiTwNmMwpKTQv](https://thecynefin.co/product/hexi-scrumorg/?srsltid=AfmBOorcohLYeVy0qBsQFI6mK_bZtJA_uGC6hPL2BdptiTwNmMwpKTQv) (Accessed: 17 May 2025).
+\[11\] LeSS.works (n.d.) Self-managing teams. Available at: [https://less.works/less/management/self-managing-teams](https://less.works/less/management/self-managing-teams) (Accessed: 17 May 2025).
+\[12\] [Cynefin.io](https://Cynefin.io/), V. (2022) Cynefin wiki, [Cynefin.io](https://Cynefin.io/). [Cynefin.io](https://Cynefin.io/). At: [https://cynefin.io/](https://cynefin.io/) (Accessed: April 4, 2023).
+\[13\] Rancati, A. and Snowden, D. (2021) Managing complexity (and chaos) in a crisis \- a field guide for decision makers inspired by the Cynefin framework. Luxembourg, Belgium: Publications Office of the European Union.
+\[14\] Snowden, D. et al. (2022) Cynefin® weaving sense-making into the fabric of our world. 2nd edn. Edited by R. Greenberg and B. Bertsch. Singapore, Singapore: Cognitive Edge \- The Cynefin Co.
+\[15\] Snowden, D. (2023) Cynefin St David's 2023 1 of 2, Cynefin Co. [https://thecynefin.co/cynefin-st-davids-2023-1-of-2/](https://thecynefin.co/cynefin-st-davids-2023-1-of-2/) (Accessed: April 20, 2023).
+\[16\] Snowden, D. (2023) Managing for emergence through abduction, The Cynefin Co. At: [https://thecynefin.co/managing-for-emergence/](https://thecynefin.co/managing-for-emergence/) (Accessed: June 24, 2023).
+\[17\] Snowden, D. and Smith, N. (2023) Leadership discussion: Dave and Natalie \- the Cynefin co, YouTube. At: [https://youtu.be/WcPZ8ybDF0w](https://youtu.be/WcPZ8ybDF0w) (Accessed: April 7, 2023).
+\[18\] Takeuchi, H. and Nonaka, I. (2014) The new new product development game, Harvard Business Review. At: [https://hbr.org/1986/01/the-new-new-product-development-game](https://hbr.org/1986/01/the-new-new-product-development-game) (Accessed: 21 January 2024).
+\[19\] Campbell, J. (2025) 'Empiricism', EBSCO Research Starters. Available at: [https://www.ebsco.com/research-starters/religion-and-philosophy/empiricism](https://www.ebsco.com/research-starters/religion-and-philosophy/empiricism) (Accessed: 17 May 2025\)
+\[20\] Womack, J.P. and Jones, D.T. (1996) Lean Thinking: Banish Waste and Create Wealth in Your Corporation. New York: Simon & Schuster.
+\[21\] Templeton Foundation (2023) 'What Is Emergence?' John Templeton Foundation. Available at: [https://www.templeton.org/news/what-is-emergence](https://www.templeton.org/news/what-is-emergence) (Accessed: 17 May 2025).
+\[22\] Wolfram, S. (2002) A new kind of science. Champaign, IL: Wolfram Media.
+\[23\] Sutherland, J., Coplien, J.O., Heasman, L., den Hollander, M., Ramos, C. and The Scrum Patterns Group (2019) A Scrum Book: The Spirit of the Game. Raleigh, NC: Pragmatic Press.
+\[24\] Alexander, C. (1979) The timeless way of building. New York: Oxford University Press.
+\[25\] Lewis, R. (2023) An operating model for business agility: Agile for managers of the digital age. Independently published.
+\[26\] less.works (n.d.) Technical Excellence. Available at: [https://less.works/less/technical-excellence](https://less.works/less/technical-excellence) (Accessed: 7 June 2025\)
+\[27\] Thurlow, N., Turner, J.R. and Podder, A. (2020) The Flow System: The Evolution of Agile and Lean Thinking in an Age of Complexity. Flow Consortium. Available at: [https://flowguides.org/Flow_Guide.pdf](https://flowguides.org/Flow_Guide.pdf) (Accessed: 17 May 2025).
+\[28\] Felderer, M. and Travassos, G.H. (2020) 'The Evolution of Empirical Methods in Software Engineering'. Available at: [https://arxiv.org/pdf/1912.11512.pdf](https://arxiv.org/pdf/1912.11512.pdf) (Accessed: 17 May 2025).
+\[29\] Creative Wisdom (n.d.) 'Abduction, Deduction and Induction'. Available at: [https://www.creative-wisdom.com/teaching/WBI/abduction5.pdf](https://www.creative-wisdom.com/teaching/WBI/abduction5.pdf) (Accessed: 17 May 2025).
+\[30\] Blackburn, S. (2003) Ethics: A Very Short Introduction. Oxford: Oxford University Press.
+\[31\] Cagan, M., 2018\. Inspired: How to Create Tech Products Customers Love. 2nd ed. Hoboken, NJ: Wiley.
+\[32\] Cagan, M. & Jones, C., 2020\. Empowered: Ordinary People, Extraordinary Products. Hoboken, NJ: Wiley.
+\[33\] Cagan, M., 2024\. Transformed: Moving to the Product Operating Model. Hoboken, NJ: Wiley.
+\[34\] Moore, G.A., 1991\. Crossing the Chasm: Marketing and Selling High-Tech Products to Mainstream Customers. New York: Harper Business.
+\[35\] Davies, Dan. (2025) The Unaccountability Machine: Why Big Systems Make Terrible Decisions—and How the World Lost Its Mind. London: Profile Books Ltd. (Paperback edition).
+\[36\] Ackoff, R.L. (1999) Ackoff's Best: His Classic Writings on Management. New York: John Wiley & Sons.
+\[37\] LeSS (n.d.) 'Why LeSS? Achieving adaptiveness'. Available at: [https://less.works/less/framework/why-less](https://less.works/less/framework/why-less) (Accessed: 17 May 2025).
+\[38\] Gothelf, J. & Seiden, J. (2021) Lean UX: Designing great products with agile teams. 3rd edn. Sebastopol, CA: O'Reilly Media
+\[39\] Torres, T. (2021) Continuous discovery habits: Discover products that create customer value and business value. North Charleston, SC: Product Talk
+\[40\] 'Genchi Genbutsu' (2024) Wikipedia. Available at: [https://en.wikipedia.org/wiki/Genchi_Genbutsu](https://en.wikipedia.org/wiki/Genchi_Genbutsu) (Accessed: 18 May 2025).
+\[41\] van der Bles, A.M., van der Linden, S., Freeman, A.L.J. and Spiegelhalter, D.J. (2019) 'Communicating uncertainty about facts, numbers and science', Royal Society Open Science, 6(5), 181870\. Available at: [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6549952/](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6549952/) (Accessed: 17 May 2025).
+\[42\] NetSuite (2023) 'What Is Business to Business to Consumer (B2B2C)?' Available at: [https://www.netsuite.com/portal/resource/articles/ecommerce/b2b2c.shtml](https://www.netsuite.com/portal/resource/articles/ecommerce/b2b2c.shtml) (Accessed: 17 May 2025).
+\[43\] Dictionary Marketing (2024) 'B2B2B'. Available at: [https://dictionarymarketing.com/definition/b2b2b/](https://dictionarymarketing.com/definition/b2b2b/) (Accessed: 17 May 2025).
+\[44\] Patton, J. and Economy, P. (2014) User Story Mapping: Discover the Whole Story, Build the Right Product. Sebastopol, CA: O'Reilly Media.
+\[45\] Kotter, J.P., 1996\. Leading Change. Boston: Harvard Business School Press.
+\[46\] Csíkszentmihályi, M. (1990) Flow: The Psychology of Optimal Experience. New York: Harper & Row
+\[47\] Stripe (2025) 'Sir Jony Ive and Patrick Collison Fireside Chat | Stripe Sessions 2025', YouTube video, 8 May. Available at: [https://youtu.be/wLb9g_8r-mE?si=1rEJxU0sxixvblQ3\&t=1390](https://youtu.be/wLb9g_8r-mE?si=1rEJxU0sxixvblQ3&t=1390) (Accessed: 8 June 2025\)
+\[48\] Kanban Guides (2025) Available at: [https://kanbanguides.org](https://kanbanguides.org/) (Accessed: 17 May 2025\)
+\[49\] [Scrum.org](http://Scrum.org) et al. (2021) The Kanban Guide for Scrum Teams. Available at: [https://www.scrum.org/resources/kanban-guide-scrum-teams](https://www.scrum.org/resources/kanban-guide-scrum-teams) (Accessed: 17 May 2025\)
+\[50\] Scotland, K. (2023) Why strategy deployment? Here are three great reasons, AvailAgility. At: [https://availagility.co.uk/2023/02/16/why-strategy-deployment-here-are-three-great-reasons/](https://availagility.co.uk/2023/02/16/why-strategy-deployment-here-are-three-great-reasons/) (Accessed: April 3, 2023).
+\[51\] Scotland, K. (2019) Deploying strategies as choices, AvailAgility. At: [https://availagility.co.uk/2019/02/08/deploying-strategies-as-choices/](https://availagility.co.uk/2019/02/08/deploying-strategies-as-choices/) (Accessed: April 3, 2023).
+\[52\] Scotland, K. (2017) Strategy deployment and playing to win, AvailAgility. At: [https://availagility.co.uk/2017/07/14/strategy-deployment-and-playing-to-win/](https://availagility.co.uk/2017/07/14/strategy-deployment-and-playing-to-win/) (Accessed: April 3, 2023).
+\[53\] Scotland, K. (2017) A strategy deployment cadence, AvailAgility. At: [https://availagility.co.uk/2017/09/06/a-strategy-deployment-cadence/](https://availagility.co.uk/2017/09/06/a-strategy-deployment-cadence/) (Accessed: April 3, 2023).
+\[54\] Scotland, K. (2022) The ultimate X-matrix for your agile transformation is here, AvailAgility. At: [https://availagility.co.uk/2022/11/03/the-ultimate-x-matrix-for-youragile-transformation-is-here/](https://availagility.co.uk/2022/11/03/the-ultimate-x-matrix-for-youragile-transformation-is-here/) (Accessed: April 5, 2023).
+\[55\] Fuzzy Business: How to be roughly right rather than precisely wrong (unpublished).
+\[56\] ScrumPlop, n.d. Illigitimus Non Interruptis. The Scrum Book: The Spirit of the Game. Available at: [https://sites.google.com/a/scrumplop.org/published-patterns/product-organization-pattern-language/illegitimus-non-interruptus](https://sites.google.com/a/scrumplop.org/published-patterns/product-organization-pattern-language/illegitimus-non-interruptus) \[Accessed: 18 May 2025\].
+\[57\] Ohno, T. (1988) Toyota Production System: Beyond Large-Scale Production. Portland, OR: Productivity Press.
+\[58\] Toyota Motor Corporation (2024) Toyota Production System. Available at: [https://global.toyota/en/company/vision-and-philosophy/production-system/index.html](https://global.toyota/en/company/vision-and-philosophy/production-system/index.html) (Accessed: 17 May 2025).
+\[59\] Hounshell, D.A. & Smith, J.K. (1988) Science and Corporate Strategy: DuPont R\&D, 1902–1980. Cambridge: Cambridge University Press.
+\[60\] Schwaber, K. and Sutherland, J. (1995) 'SCRUM Development Process', OOPSLA Business Object Design and Implementation Workshop. Austin, Texas, October 1995\. Available at: [http://jeffsutherland.org/oopsla/schwapub.pdf](http://jeffsutherland.org/oopsla/schwapub.pdf) (Accessed: 17 May 2025).
+\[61\] Members of The Scrum Patterns Group: Vervloed, E., Harrison, N., Harada, K., Yoder, J., Kim, J., O'Callaghan, A., Beedle, M., Bjørnvig, G., Friis, D., Reijonen, V., Benefield, G., Østergaard, J., Eloranta, V.-P., Leonard, E. & Aguiar, A.
+\[62\] Boyd, J.R. (1995–1996) The Essence of Winning and Losing. Unpublished briefing slides. Note: Boyd's OODA was primarily disseminated through military briefings and unpublished manuscripts. His final conceptualization appears in The Essence of Winning and Losing, which emphasizes nonlinear decision-making and adaptation in complex environments.
+\[63\] Turner, J.R., Thurlow, N. and Rivera, B. (2019) The Flow System Guide. Available at: [https://flowguides.org/Flow_Guide.pdf](https://flowguides.org/Flow_Guide.pdf) (Accessed: 24 May 2025). Summary: This guide integrates Boyd's OODA with complexity theory and agile practices, framing it as a dynamic, non-linear decision-making process for organizational flow.
