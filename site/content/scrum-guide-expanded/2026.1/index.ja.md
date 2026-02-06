@@ -1649,3 +1649,230 @@ _少なくとも1人のプロダクト開発者は人間であるべきである
 \[61\] Members of The Scrum Patterns Group: Vervloed, E., Harrison, N., Harada, K., Yoder, J., Kim, J., O'Callaghan, A., Beedle, M., Bjørnvig, G., Friis, D., Reijonen, V., Benefield, G., Østergaard, J., Eloranta, V.-P., Leonard, E. & Aguiar, A.
 \[62\] Boyd, J.R. (1995–1996) The Essence of Winning and Losing. Unpublished briefing slides. Note: Boyd's OODA was primarily disseminated through military briefings and unpublished manuscripts. His final conceptualization appears in The Essence of Winning and Losing, which emphasizes nonlinear decision-making and adaptation in complex environments.
 \[63\] Turner, J.R., Thurlow, N. and Rivera, B. (2019) The Flow System Guide（日本語訳版: フローシステムガイド）. Available at: [https://flowguides.org/Flow_Guide.pdf](https://flowguides.org/Flow_Guide.pdf) (Accessed: 24 May 2025). 要約：このガイドはBoydのOODAを複雑性理論とアジャイル実践と統合し、組織のフローのための動的で非線形な意思決定プロセスとして枠組み化している。
+
+## スクラムガイド拡張パック用語集
+
+&nbsp;
+
+**役割・チーム**
+
+| 英語                            | 日本語                    | 説明                                                             |
+| ------------------------------- | ------------------------- | ---------------------------------------------------------------- |
+| Scrum Team                      | スクラムチーム            | スクラムマスター、プロダクトオーナー、開発者で構成される         |
+| Product Owner                   | プロダクトオーナー        | プロダクトの価値最大化に責任を持つ                               |
+| Scrum Master                    | スクラムマスター          | スクラムの確立に責任を持つ                                       |
+| Product Developers / Developers | プロダクト開発者 / 開発者 | インクリメントの作成に責任を持つ                                 |
+| Stakeholders                    | ステークホルダー          | プロダクトに関心を持つ関係者                                     |
+| Supporters                      | サポーター                | スクラムチームを支援する人々                                     |
+| Self-managing Scrum Team        | 自己管理スクラムチーム    | 自律的に意思決定を行うスクラムチーム                             |
+| Customer                        | 顧客                      | プロダクトを購入・選択することで価値を受け取るステークホルダー   |
+| User                            | ユーザー                  | プロダクトと直接相互作用するステークホルダー                     |
+| Decision-maker                  | 意思決定者                | プロダクトの採用・購入を承認・認可する権限を持つステークホルダー |
+| Financial Sponsors              | 資金提供者                | プロダクト開発・改善のための資金・リソースを提供する             |
+| Subject Matter Experts          | 特定分野のエキスパート    | プロダクト作成に不可欠な深い知識・スキルを提供する               |
+| Legislators                     | 立法者                    | プロダクト運用のためのルール・政策・境界を確立する               |
+| Accountability                  | 説明責任                  |                                                                  |
+| Responsibility                  | 責任                      |                                                                  |
+
+&nbsp;
+
+**作成物（Artifacts）**
+
+| 英語                 | 日本語                       | 説明                             |
+| -------------------- | ---------------------------- | -------------------------------- |
+| Product              | プロダクト                   | 価値を提供する成果物             |
+| Product Backlog      | プロダクトバックログ         | プロダクト改善に必要な項目の一覧 |
+| Product Backlog Item | プロダクトバックログアイテム | プロダクトバックログの個別項目   |
+| Sprint Backlog       | スプリントバックログ         | スプリントの作業計画             |
+| Increment            | インクリメント               | 利用可能な成果物                 |
+
+&nbsp;
+
+**コミットメント（Commitments）**
+
+| 英語                       | 日本語                 | 説明                                       |
+| -------------------------- | ---------------------- | ------------------------------------------ |
+| Product Goal               | プロダクトゴール       | プロダクトの将来の状態                     |
+| Sprint Goal                | スプリントゴール       | スプリントの目的                           |
+| Definition of Output Done  | アウトプット完成の定義 | インクリメントの品質基準                   |
+| Definition of Outcome Done | アウトカム完成の定義   | 価値実現の証拠基準                         |
+| Definition of Done         | 完成の定義             | プロダクトの品質基準（公式スクラムガイド） |
+| Acceptance Criteria        | 受け入れ基準           | 個別項目の完了条件                         |
+| Outcome Criteria           | アウトカム基準         | 価値実現の意図                             |
+
+&nbsp;
+
+**イベント（Events）**
+
+| 英語                 | 日本語                       | 説明                   |
+| -------------------- | ---------------------------- | ---------------------- |
+| Sprint               | スプリント                   | 作業の反復期間         |
+| Sprint Planning      | スプリントプランニング       | スプリントの計画立案   |
+| Daily Scrum          | デイリースクラム             | 日次の進捗確認         |
+| Sprint Review        | スプリントレビュー           | 成果の検査と適応       |
+| Sprint Retrospective | スプリントレトロスペクティブ | 改善の計画             |
+| Refinement           | リファインメント             | バックログ項目の詳細化 |
+
+&nbsp;
+
+**価値基準（Values）**
+
+| 英語       | 日本語 | 説明                     |
+| ---------- | ------ | ------------------------ |
+| Commitment | 確約   | ゴール達成への献身       |
+| Focus      | 集中   | 重要な作業への注力       |
+| Openness   | 公開   | 透明性のある情報共有     |
+| Respect    | 尊敬   | 互いを専門家として認める |
+| Courage    | 勇気   | 正しいことを行う勇気     |
+
+&nbsp;
+
+**三本柱**
+
+| 英語         | 日本語 | 説明               |
+| ------------ | ------ | ------------------ |
+| Transparency | 透明性 | 作業と成果の可視化 |
+| Inspection   | 検査   | 進捗と成果の確認   |
+| Adaptation   | 適応   | 学習に基づく調整   |
+
+&nbsp;
+
+**理論・概念**
+
+| 英語                      | 日本語             | 説明                                       |
+| ------------------------- | ------------------ | ------------------------------------------ |
+| Empiricism                | 経験主義           | 経験と観察に基づく知識獲得                 |
+| Empirical Process Control | 経験的プロセス制御 | 証拠に基づく意思決定プロセス               |
+| Lean Thinking             | リーン思考         | 無駄を省き本質に集中する考え方             |
+| Emergence                 | 創発               | 相互作用から生まれる新しいパターン         |
+| Self-Management           | 自己管理           | チームによる自律的な意思決定               |
+| Complex Work              | 複雑な作業         | 予測困難で専門知識が必要な作業             |
+| Complexity                | 複雑性             | システムの予測困難性                       |
+| Complex Adaptive Systems  | 複雑適応系         | 複雑適応系                                 |
+| First Principles Thinking | 第一原理思考       | 基本的真実からの問題解決                   |
+| OODA                      | OODA               | 観察・方向付け・決定・行動の意思決定ループ |
+
+&nbsp;
+
+**プロダクト関連**
+
+| 英語               | 日本語                 | 説明                                                   |
+| ------------------ | ---------------------- | ------------------------------------------------------ |
+| Product Vision     | プロダクトビジョン     | 長期的な望ましい成果                                   |
+| Product Strategy   | プロダクト戦略         | ビジョン達成の方針                                     |
+| Product Thinking   | プロダクト思考         | プロダクト中心の考え方                                 |
+| Stakeholder Value  | ステークホルダー価値   | ステークホルダーが重要と考える知覚されたニーズ         |
+| Value              | 価値                   | ステークホルダーの期待充足                             |
+| Value Realization  | 価値実現               | 実際の価値の達成                                       |
+| Value Validation   | 価値検証               | 価値実現の確認                                         |
+| Crossing the Chasm | キャズムの克服         | ニッチ成功から広範囲採用への移行                       |
+| Satisfaction Gap   | 満足度ギャップ         | 現在の体験と望ましい体験の差                           |
+| Effectiveness      | 効果性                 | 適切なことを適切に行う能力                             |
+| responsiveness     | 反応性                 | 変化や要求に迅速に対応する能力                         |
+| anti-goal          | 避けるべきゴール       | 達成してはならない望ましくない結果                     |
+| risk exposure      | リスクエクスポージャー | リスクの影響度、リスクにさらされている程度             |
+| Vertical Slice     | 垂直スライス           | 独立して価値を提供できる、システム全層にわたる機能単位 |
+
+&nbsp;
+
+**プロセス・活動**
+
+| 英語                         | 日本語               | 説明                                                           |
+| ---------------------------- | -------------------- | -------------------------------------------------------------- |
+| Discovery                    | 発見                 | 問題や機会の探索                                               |
+| Delivery                     | 提供                 | ソリューションの実装                                           |
+| Product Delivery             | プロダクトデリバリー | プロダクトのデリバリー                                         |
+| Release                      | リリース             | ステークホルダーへの提供                                       |
+| Feedback                     | フィードバック       | 結果からの学習                                                 |
+| Result Feedback              | 結果フィードバック   | 成果から得られる情報                                           |
+| High-bandwidth Conversations | 帯域幅の太い会話     | 最も豊富で速く明確な情報交換を可能にする会話                   |
+| Cross-pollination            | 他家受粉             | 異なる組織・チーム・分野間での知識・アイデア・実践の交換と移転 |
+
+&nbsp;
+
+**品質・技術**
+
+| 英語                 | 日本語                 | 説明                             |
+| -------------------- | ---------------------- | -------------------------------- |
+| Technical Excellence | 技術的卓越性           | 高品質な技術実践                 |
+| Technical Debt       | 技術的負債             | 短期的な選択による長期的なコスト |
+| UX/CX Debt           | UX/CX負債              | ユーザー体験の改善不足           |
+| Professionalism      | プロフェッショナリズム | 職業的責任と優秀性の追求         |
+
+&nbsp;
+
+**組織・フレームワーク**
+
+| 英語                | 日本語             | 説明                       |
+| ------------------- | ------------------ | -------------------------- |
+| Beyond Budgeting    | 脱予算経営         | 従来予算を超越した管理手法 |
+| Humanocracy         | ヒューマノクラシー | 人間中心の組織運営手法     |
+| Sociocracy          | ソシオクラシー     | 同意による意思決定システム |
+| Adaptive Enterprise | 適応力のある企業   | 変化に対応できる組織       |
+| Emergent Strategy   | 創発的戦略         | 状況に応じて発展する戦略   |
+
+&nbsp;
+
+**AI・技術**
+
+| 英語                         | 日本語               | 説明                     |
+| ---------------------------- | -------------------- | ------------------------ |
+| Artificial Intelligence (AI) | 人工知能（AI）       | 人間の知能を模倣する技術 |
+| Cognitive Augmentation       | 認知的拡張           | AIによる人間能力の強化   |
+| Human in the Loop            | 人間をループ内に保つ | AI使用時の人間による監督 |
+
+&nbsp;
+
+**フレームワーク・理論**
+
+| 英語             | 日本語       | 説明                                                                     |
+| ---------------- | ------------ | ------------------------------------------------------------------------ |
+| Cynefin®         | クネビン     | 意思決定のためのフレームワーク Basic Cynefin®                            |
+| Ordered          | 秩序         | クネビン：因果関係が明確で、ベストプラクティスが適用可能な問題領域       |
+| Complicated      | 煩雑         | クネビン：因果関係は分析可能だが、専門知識が必要な問題領域               |
+| Complex          | 複雑         | クネビン：因果関係が事後的にのみ理解でき、創発的実践が必要な問題領域     |
+| Chaotic          | 混沌         | クネビン：因果関係が不明で、迅速な行動と安定化が必要な問題領域           |
+| Aporetic         | 無秩序       | クネビン：どの領域に属するか不明な状態                                   |
+| OODA             | OODA         | 観察・方向付け・決定・行動のサイクル。迅速な意思決定と適応のためのループ |
+| Systems Thinking | システム思考 | 部分最適化を避け、システム全体の相互作用を考慮した思考法                 |
+
+&nbsp;
+
+**その他**
+
+| 英語                    | 日本語                           | 説明                                               |
+| ----------------------- | -------------------------------- | -------------------------------------------------- |
+| Timebox                 | タイムボックス                   | 作業時間の上限設定                                 |
+| Cadence                 | ケイデンス                       | 一定のリズム                                       |
+| Flow                    | フロー                           | 価値の流れ                                         |
+| Leadership              | リーダーシップ                   | 影響力とガイダンス                                 |
+| Change Agent            | チェンジエージェント             | 組織変革を推進する人                               |
+| Systems Thinking        | システム思考                     | 全体的な相互関係の理解                             |
+| Aligned Autonomy        | 整合された自律性                 | 共有目標に集中しながら問題解決方法を決定する自由   |
+| Cross-functional        | 機能横断型                       | 技術とビジネスドメインのスキルを含む多分野性       |
+| Governance              | ガバナンス                       | プロダクトの方向性・意思決定・責任を導く構造・基準 |
+| Impediment              | 障害物                           | 進歩を阻害または遅延させるもの                     |
+| Evidence                | エビデンス                       | 客観的に観察された根拠                             |
+| Cognitive Diversity     | 認知的多様性                     | 思考パターンの多様性                               |
+| Guiding Coalition       | 指導連合                         | 変革を推進する強力なグループ                       |
+| Genchi Genbutsu         | 現地現物                         | 決定を知らせるために事実と観察を収集すること       |
+| Side Effects            | 副作用                           | 予期しない、または意図しない結果や結末             |
+| Exaptation              | エクサプテーション               | ある目的のものを異なる目的で使用すること           |
+| Estuarine Mapping       | 河口域マッピング                 | クネビンフレームワークのマッピング手法             |
+| RenDanHeYi              | 人単合一                         | ハイアールの経営モデル                             |
+| Abduction               | アブダクション                   | 推論の一形態                                       |
+| Sense-making            | センスメイキング                 | 意味形成、状況理解のプロセス                       |
+| Product Operating Model | プロダクトオペレーティングモデル | プロダクト中心の運営モデル                         |
+| Strategy Deployment     | 戦略展開                         | 戦略の実行計画への展開                             |
+| Motivation Crowding     | モチベーション・クラウディング   | 外発的動機付けが内発的動機を損なう現象             |
+| B2B2B                   | B2B2B                            | Business to Business to Business                   |
+| B2B2C                   | B2B2C                            | Business to Business to Consumer                   |
+
+&nbsp;
+
+**歴史的・理論的背景**
+
+| 英語                                 | 日本語                       | 説明                                             |
+| ------------------------------------ | ---------------------------- | ------------------------------------------------ |
+| Toyota Production System             | トヨタ生産方式               | リーン思考の基盤となった生産管理システム         |
+| The New New Product Development Game | 「新たなる新製品開発の方法」 | Takeuchi・Nonaka論文、スクラムの語源となった研究 |
