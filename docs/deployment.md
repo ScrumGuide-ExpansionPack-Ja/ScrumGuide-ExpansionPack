@@ -9,30 +9,47 @@ This guide covers the deployment process for the Scrum Guide Expansion Pack usin
 
 ## Deployment Overview
 
-The project uses **Azure Static Web Apps** for hosting with automated deployments triggered by GitHub Actions. The deployment pipeline supports multiple environments for different stages of development.
+The project uses **Azure Static Web Apps** for hosting with automated deployments triggered by GitHub Actions. The deployment pipeline follows a structured workflow through multiple environments.
+
+### Deployment Workflow
+
+```
+Fork/Branch → PR (Test Site) → Merge to Main (Preview) → GitHub Release (Production)
+```
+
+**Step-by-Step Process:**
+
+1. **Development**: Create feature branch or fork and make changes
+2. **Pull Request**: PR creates automatic deployment to test site with unique URL
+3. **Preview**: Merge to `main` branch automatically deploys to Preview environment
+4. **Production**: Create GitHub Release with version tag to deploy to Production
 
 ## Deployment Environments
 
 ### 🚀 Production Environment
 
 - **URL**: [scrumexpansion.org](https://scrumexpansion.org) - **Live production site**
-- **Branch**: `main`
+- **Trigger**: GitHub Release with version tag (e.g., `v1.2.0`)
 - **Configuration**: `staticwebapp.config.production.json`
 - **Hugo Config**: `hugo.yaml`
+- **Deployment Method**: Semantic versioning through GitHub Releases
 
 ### 🔄 Preview Environment
 
 - **URL**: [agreeable-island-0c966e810-preview.centralus.6.azurestaticapps.net](https://agreeable-island-0c966e810-preview.centralus.6.azurestaticapps.net/) - **Test environment for pre-production changes**
-- **Branch**: `preview`
+- **Trigger**: Automatic deployment when PR is merged to `main` branch
 - **Configuration**: `staticwebapp.config.preview.json`
 - **Hugo Config**: `hugo.preview.yaml`
+- **Purpose**: Pre-production validation before creating production release
 
 ### 🐤 Canary Environment
 
 - **URL**: [https://agreeable-island-0c966e810-{PullRequestId}.centralus.6.azurestaticapps.net](https://agreeable-island-0c966e810-{PullRequestId}.centralus.6.azurestaticapps.net)
-- **Branch**: `canary`
+- **Trigger**: Automatic deployment when Pull Request is created
 - **Configuration**: `staticwebapp.config.canary.json`
 - **Hugo Config**: `hugo.canary.yaml`
+- **Purpose**: Test changes in isolation before merging
+- **Note**: Only PRs to main repository get deployed (not from forks)
 
 ## Azure Static Web Apps Configuration
 
@@ -51,9 +68,15 @@ The project uses **Azure Static Web Apps** for hosting with automated deployment
 - **{PullRequestId}**: Replaced with actual PR number (e.g., `agreeable-island-0c966e810-42.centralus.6.azurestaticapps.net` for PR #42)
 - **centralus.6.azurestaticapps.net**: Azure region and domain suffix
 
-### Static Web App Configurations
+### Environment-Specific Configurations
 
 Each environment has its own configuration file:
+
+| Environment | Config File | Hugo Config | Trigger |
+|-------------|-------------|-------------|----------|
+| **PR/Test** | `staticwebapp.config.canary.json` | `hugo.canary.yaml` | Pull Request created |
+| **Preview** | `staticwebapp.config.preview.json` | `hugo.preview.yaml` | Merge to `main` |
+| **Production** | `staticwebapp.config.production.json` | `hugo.yaml` | GitHub Release created |
 
 ```json
 {
@@ -116,9 +139,49 @@ Each environment has its own configuration file:
 
 The deployment is triggered automatically when:
 
-1. **Pull requests** are created (creates staging deployments with unique URLs)
-2. **Manual workflow dispatch** is triggered
-3. **Push to main** deploys to production
+1. **Pull Request Created** → Deploys to PR-specific test site (e.g., `agreeable-island-0c966e810-42.centralus.6.azurestaticapps.net`)
+2. **PR Merged to Main** → Deploys to Preview environment (`agreeable-island-0c966e810-preview.centralus.6.azurestaticapps.net`)
+3. **GitHub Release Created** → Deploys to Production with version tag (`scrumexpansion.org`)
+
+### Semantic Versioning for Production
+
+**Production deployments use semantic versioning through GitHub Releases:**
+
+| Version Type | Format | Use Case | Example |
+|--------------|--------|----------|----------|
+| **Patch** | `v1.0.1` | Typo fixes, small corrections, tiny changes | `v1.0.1` → Fix typo in guide |
+| **Minor** | `v1.1.0` | New section, content additions, feature additions | `v1.1.0` → Add new guide section |
+| **Major** | `v2.0.0` | Complete document revamp, breaking changes, restructure | `v2.0.0` → Complete guide overhaul |
+
+### Creating a Production Release
+
+**Steps to deploy to production:**
+
+1. Ensure all changes are merged to `main` branch
+2. Verify Preview site is working correctly
+3. Navigate to GitHub → Releases → **Draft a new release**
+4. Create or select a **version tag** following semantic versioning (e.g., `v1.2.0`)
+5. Set **target branch** to `main`
+6. Add **release title** and **description** with changelog
+7. Click **Publish release**
+8. GitHub Actions automatically deploys to production
+
+**Example Release Notes:**
+
+```markdown
+## v1.2.0 - New Psychological Safety Guide
+
+### Added
+- New guide: Psychological Safety in Scrum Teams
+- Translation support for German (DE)
+
+### Changed
+- Updated homepage layout
+- Improved mobile navigation
+
+### Fixed
+- Corrected references in Complexity guide
+```
 
 ### Azure Static Web Apps Features
 
@@ -128,36 +191,38 @@ The deployment is triggered automatically when:
 - **Automatic SSL**: Managed SSL certificates
 - **Global CDN**: Worldwide content distribution
 
-### Current Workflow Configuration
+### Automated Workflows
 
-The actual GitHub Actions workflow is configured for Azure Static Web Apps:
+The repository uses several GitHub Actions workflows:
 
-```yaml
-name: Azure Static Web Apps CI/CD
+| Workflow | File | Purpose | Trigger |
+|----------|------|---------|---------|
+| **Build & Release** | `main.yaml` | Builds and deploys to all environments (PR test sites, Preview, Production) | Push to main, PR creation, Release creation |
+| **PR Cleanup** | `close-pr.yaml` | Cleans up PR-specific test environments | PR closed |
+| **Docs to Wiki** | `docs-to-wiki.yml` | Syncs documentation from `/docs` to GitHub Wiki | Push to main (docs changes) |
+| **Copilot Setup** | `copilot-setup-steps.yml` | Development environment setup helper | Manual dispatch only |
+| **Tag External Edits** | `discussion-tag-external-edits.yml` | Tags discussions from external contributors | Discussion created/edited |
+| **Stale Issues** | `stale-issues.yml` | Automatically closes stale duplicate issues | Daily at 2:00 UTC |
+| **LEGACY** | `azure-static-web-apps-*.yml` | ⛔ **DO NOT USE** - Disabled legacy workflow | Disabled |
 
-on: workflow_dispatch
+**Primary Deployment Workflow (`main.yaml`):**
 
-jobs:
-  build_and_deploy_job:
-    if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
-    runs-on: ubuntu-latest
-    name: Build and Deploy Job
-    steps:
-      - uses: actions/checkout@v3
-        with:
-          submodules: true
-          lfs: false
-      - name: Build And Deploy
-        id: builddeploy
-        uses: Azure/static-web-apps-deploy@v1
-        with:
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_AGREEABLE_ISLAND_0C966E810 }}
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
-          action: "upload"
-          app_location: "./site"
-          api_location: ""
-          output_location: "."
-```
+- Builds Hugo site with environment-specific configuration
+- Deploys to Azure Static Web Apps
+- Supports all three environments: PR test sites, Preview, and Production
+- Handles version tagging and release management
+
+**Environment Cleanup (`close-pr.yaml`):**
+
+- Automatically removes PR-specific test environments from Azure
+- Runs when a pull request is closed
+- Prevents accumulation of unused test environments
+
+**Documentation Sync (`docs-to-wiki.yml`):**
+
+- Keeps GitHub Wiki synchronized with `/docs` folder
+- Runs automatically on documentation changes
+- Can be manually triggered for full sync
 
 ## Environment-Specific Configurations
 
@@ -217,6 +282,102 @@ enableRobotsTXT: false
 # Different analytics for canary
 googleAnalytics: "G-CANARY-ID"
 ```
+
+## Release Gating (Feature Flags)
+
+Content and translations can be merged to `main` (and therefore visible on **Preview**) before they are ready for production. Two mechanisms prevent unfinished work from reaching [scrumexpansion.org](https://scrumexpansion.org):
+
+### 1. Language Gating via `hugo.production.yaml`
+
+Languages that have **not yet met the review requirements** defined in [translations-code-of-conduct.md](./translations-code-of-conduct.md) (in particular, the minimum of five mother-tongue reviewers — see Section 4, items 5–6) should still be merged to `main` so they are visible on Preview for review. To prevent them from appearing on Production, set `disabled: true` for the language in `site/hugo.production.yaml`:
+
+```yaml
+# site/hugo.production.yaml
+languages:
+  tlh:
+    disabled: true   # Klingon – reference language, never enabled
+  nl:
+    disabled: true   # Dutch – awaiting reviewer sign-off
+  de:
+    disabled: true   # German – awaiting reviewer sign-off
+  ro:
+    disabled: true   # Romanian – awaiting reviewer sign-off
+  it:
+    disabled: true   # Italian – awaiting reviewer sign-off
+  fa:
+    disabled: false  # Farsi – review complete, enabled
+  es:
+    disabled: false  # Spanish – review complete, enabled
+```
+
+**Workflow:**
+
+1. Translator opens PR with the new language content.
+2. PR is reviewed, merged to `main` → content is live on **Preview** for review.
+3. The language entry in `hugo.production.yaml` is set to `disabled: true` (or already is).
+4. Reviewers validate the translation on Preview, and the translation guardian confirms the [Translation Code of Conduct](./translations-code-of-conduct.md) criteria are met.
+5. A follow-up PR sets `disabled: false` for that language in `hugo.production.yaml`.
+6. The next GitHub Release includes the newly enabled language in **Production**.
+
+### 2. Content Gating via Hugo Build Tags
+
+Individual **documents**, **document versions**, and **document translations** can be excluded from Production using Hugo's `build` settings with an environment target. This is useful for work-in-progress guides or translations that are not ready for public release.
+
+Add the following to the front matter of the relevant content page:
+
+```yaml
+# Prevents this page (and its children via cascade) from being
+# listed or rendered in the production environment.
+cascade:
+  - build:
+      list: never
+      render: never
+    target:
+      environment: production
+```
+
+**Where to apply it:**
+
+| Scope | File to edit | Effect |
+|-------|-------------|--------|
+| **Entire document** (all versions & translations) | `site/content/{guide}/_index.md` | The `cascade` propagates to every child page under that guide |
+| **Single version** (all languages for that version) | `site/content/{guide}/{version}/index.md` | Only that version is hidden; other versions remain visible |
+| **Single translation** | `site/content/{guide}/{version}/index.{lang}.md` | Only that one translation is hidden |
+
+> **Important:** Hugo's `cascade` does **not** propagate from the English page to other language files at the same level. If you need to gate a specific version for all languages, you must add the `build` block to **every language file** in that version folder, or add `cascade` to the parent `_index.md` for the document root.
+
+**Example — gate an entire guide (Planguage):**
+
+```yaml
+# site/content/planguage/_index.md
+---
+title: Planguage
+cascade:
+  - build:
+      list: never
+      render: never
+    target:
+      environment: production
+---
+```
+
+This keeps the Planguage guide visible on Preview and Canary environments for review while hiding it from the production build at [scrumexpansion.org](https://scrumexpansion.org).
+
+**Workflow:**
+
+1. Author creates guide content and adds the `cascade` build block to the guide's `_index.md` (or individual pages).
+2. Content is merged to `main` → visible on **Preview** for review.
+3. Once the guide is approved for public release, a follow-up PR removes the `cascade` build block.
+4. The next GitHub Release includes the guide on **Production**.
+
+### Combining Both Mechanisms
+
+For a new guide written in a new language, both mechanisms may apply:
+
+- The **language** itself is gated via `hugo.production.yaml` (`disabled: true`).
+- The **guide content** is gated via `cascade` build tags in its front matter.
+
+Both must be resolved before the content appears on Production. They are independent — removing the build tag does not enable the language, and enabling the language does not remove the build tag.
 
 ## Manual Deployment
 
@@ -376,10 +537,10 @@ gh secret list
 
 ### Quick Rollback Options
 
-1. **Revert commit** and push to trigger new deployment
-2. **Deploy previous version** manually
-3. **Switch traffic** to previous environment
-4. **Use GitHub release** to deploy specific version
+1. **Create new patch release** with reverted changes
+2. **Create new release** from previous commit
+3. **Revert commit** on main, let Preview validate, then create new release
+4. **Re-publish previous GitHub Release** (if supported)
 
 ### Emergency Procedures
 
@@ -388,10 +549,16 @@ gh secret list
 git revert HEAD --no-edit
 git push origin main
 
-# Or reset to specific commit
+# Verify in Preview environment first
+# Then create new patch release (e.g., v1.2.1) to deploy to production
+
+# Or reset to specific commit (use with caution)
 git reset --hard <commit-hash>
 git push --force-with-lease origin main
+# Then create new release
 ```
+
+**Important**: Always validate changes in the Preview environment before creating a production release.
 
 ## Best Practices
 
@@ -403,6 +570,29 @@ git push --force-with-lease origin main
 - ✅ **Check for broken links**
 - ✅ **Verify translations** are complete
 - ✅ **Test on multiple devices/browsers**
+- ✅ **Validate changes in Preview** environment after merge to main
+
+### Post-deployment Checklist
+
+- ✅ **Verify site loads** correctly
+- ✅ **Check all languages** work
+- ✅ **Test download links** and PDFs
+- ✅ **Monitor performance** metrics
+- ✅ **Check analytics** tracking
+- ✅ **Validate SEO** elements
+
+### Deployment Decision Guide
+
+**When to deploy to each environment:**
+
+| Scenario | Action | Environment |
+|----------|--------|-------------|
+| Testing new feature | Create Pull Request | PR Test Site |
+| Ready for team review | Merge to main | Preview |
+| Ready for public release | Create GitHub Release | Production |
+| Small typo fix | Create PR → Merge → Patch Release (v1.0.x) | All three |
+| New content section | Create PR → Merge → Minor Release (v1.x.0) | All three |
+| Major overhaul | Create PR → Merge → Major Release (vx.0.0) | All three |
 
 ### Post-deployment Checklist
 

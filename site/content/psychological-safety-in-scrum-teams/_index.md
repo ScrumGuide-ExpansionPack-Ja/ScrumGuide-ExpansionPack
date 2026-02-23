@@ -10,7 +10,8 @@ weight: 2
 guide_license: |
   License: Creative Commons Attribution-ShareAlike 4.0 International ( CC BY-SA 4.0  ).
 categories:
-  - Teams
+  - Leadership & Organization
+  - Scrum Foundations
 tags:
 - Psychological safety
 - Scrum Teams
