@@ -4,7 +4,7 @@ title: AIとスクラム（SGEP拡張版）
 # subtitle: An Evidence-Informed Integration Guide
 subtitle: エビデンスに基づく統合ガイド
 # description: AI can accelerate delivery, but it can also scale waste if you build the wrong things faster. This guide shows how Scrum's transparency, inspection, and adaptation keeps humans accountable, protects quality, and turns AI-accelerated output into measurable outcomes, with practical guidance for Product Owners, Product Developers, Scrum Masters, and leaders.
-description: AIはデリバリーを加速できるが、間違ったものをより速く構築すれば無駄も拡大する。このガイドでは、スクラムの透明性、検査、適応が人間の説明責任を維持し、品質を保護し、AI加速されたアウトプットを測定可能なアウトカムに変える方法を、プロダクトオーナー、プロダクト開発者、スクラムマスター、リーダー向けの実践的なガイダンスとともに示す。
+description: AIはデリバリーを加速できる。しかし、間違ったものをより速く構築すれば、無駄もまた拡大する。このガイドでは、スクラムの透明性・検査・適応が、いかに人間の説明責任を維持し、品質を守り、AIに加速されたアウトプットを測定可能なアウトカムへと転換するかを、プロダクトオーナー、プロダクト開発者、スクラムマスター、リーダー向けの実践的なガイダンスとともに示す。
 # keywords:
 # - AI-accelerated delivery
 # - Outcome-driven product development
@@ -62,7 +62,7 @@ aliases:
 
 <!-- *This document is a collection of independent works. Each section retains its original license or copyright status, as indicated. Please refer to each section for specific usage rights and requirements.* -->
 
-_この文書は独立した著作物のコレクションである。各セクションは示されているとおり、元のライセンスまたは著作権の状態を保持している。具体的な使用権と要件については、各セクションを参照してほしい。_
+_本書は、独立した著作物を収録したものである。各セクションは記載の通り、オリジナルのライセンスや著作権状況を保持している。特定の使用権限と要件については、各セクションを参照して欲しい。_
 
 ---
 
